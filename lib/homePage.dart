@@ -6,7 +6,16 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(),
+      appBar: AppBar(
+        title: Text("Sulawesi Selatan"),
+      ),
+      body: SingleChildScrollView(
+        child: Stack(
+          children: [
+            Image.asset("assets/image/home_page.jpg")
+          ],
+        ),
+      ),
     );
   }
 }
