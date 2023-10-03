@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -69,7 +68,9 @@ class HomePage extends StatelessWidget {
                               child: Align(
                                 alignment: Alignment.center,
                                 child: InkWell(
-                                  onTap: (){},
+                                  onTap: (){
+
+                                  },
                                   child: Text("Ekonomi",
                                     style: TextStyle(
                                         color: Colors.white,
