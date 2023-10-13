@@ -71,12 +71,14 @@ class Budaya {
   final String exBudaya;
   final String decsBudaya;
   final String nilai;
+  final String gambar;
 
-  Budaya({
+  Budaya( {
     required this.nmSosbud,
     required this.exBudaya,
     required this.decsBudaya,
     required this.nilai,
+    required this.gambar,
   });
 }
 
@@ -177,24 +179,28 @@ void main() {
         exBudaya: "Rambu Solo",
         decsBudaya: "menghormati orang yang meninggal",
         nilai: "Gotong Royong",
+        gambar : "assets/image/sosbud/nilaibudaya.jpg",
       ),
       sosbud2: Budaya(
           nmSosbud : "Adat Istiadat",
           exBudaya : "Keanekaragaman",
           decsBudaya : "Tradisi",
           nilai : "Peninggalan",
+          gambar : "assets/image/sosbud/adatistiadat.jpg",
       ),
       sosbud3: Budaya(
         nmSosbud : "Kesenian",
         exBudaya : "Kekayaan",
         decsBudaya : "Seni",
         nilai : "Peninggalan",
+        gambar : "assets/image/sosbud/kesenian.jpg",
       ),
       sosbud4: Budaya(
           nmSosbud : "Perkembangan Sosial",
           exBudaya : "Harmoni",
           decsBudaya : "Transformasi",
           nilai : "Pemeliharaan",
+        gambar : "assets/image/sosbud/perkembangansosial.jpg",
       ),
     ),
     kuliner: Kuliner(
