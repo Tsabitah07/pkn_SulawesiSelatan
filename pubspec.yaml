@@ -74,6 +74,18 @@ flutter:
     - lib/assets/image/ekonomi/ekonomi_pariwisata.jpg
     - lib/assets/image/ekonomi/ekonomi_perikanan.jpg
     - lib/assets/image/ekonomi/ekonomi_pertanian.jpg
+    - lib/assets/image/sosbud/view.jpg
+    - lib/assets/image/sosbud/apa.jpg
+    - lib/assets/image/sosbud/ma'nene.jpg
+    - lib/assets/image/sosbud/hongkonan.jpg
+    - lib/assets/image/desktop_home_page.jpg
+    - lib/assets/image/hp_home_page.jpg
+    - lib/assets/image/wakil_gubernur_sulsel.jpg
+    - lib/assets/image/gubernur_sulsel.jpg
+    - lib/assets/image/ibu_kota_sulsel.png
+    - lib/assets/image/sosial/histori_background.jpg
+    - lib/assets/image/profile/
+
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
