@@ -61,7 +61,13 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - lib/assets/image/home_page.jpg
+    - lib/assets/image/desktop_home_page.jpg
+    - lib/assets/image/hp_home_page.jpg
+    - lib/assets/image/wakil_gubernur_sulsel.jpg
+    - lib/assets/image/gubernur_sulsel.jpg
+    - lib/assets/image/ibu_kota_sulsel.png
+    - lib/assets/image/sosial/histori_background.jpg
+    - lib/assets/image/profile/
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
