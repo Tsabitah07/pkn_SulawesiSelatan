@@ -153,7 +153,7 @@ void main() {
     ekonomi: Ekonomi(
       ekonomi1: Aspek(
           nmAspek: "Pertanian",
-          foto: "Foto Ekonomi 1",
+          foto: "assets/image/ekonomi/ekonomi_pertanian.jpg",
           geografis:
               "Sulawesi Selatan, terletak di bagian timur Indonesia, memiliki karakteristik geografis yang mendukung sektor pertanian. Wilayah ini memiliki lahan yang subur dan luas dengan berbagai jenis tanah yang cocok untuk berbagai jenis tanaman. Topografi Sulawesi Selatan juga beragam, mencakup pegunungan yang menjulang tinggi dan pantai-pantai yang memukau. Iklim tropisnya memberikan kondisi yang baik untuk pertanian sepanjang tahun.",
           produk: "padi, jagung, kakao, kelapa, kopi, cengkih,",
@@ -162,7 +162,7 @@ void main() {
           deskripsi: "Sulawesi Selatan memiliki lahan subur, beragam produk pertanian, dan menjadi mata pencaharian utama penduduk, yang berkontribusi besar terhadap PDB provinsi ini dan memiliki potensi ekspor, serta dukungan pemerintah, menjadikan pertanian sebagai pilar utama dalam ekonomi Sulawesi Selatan."),
       ekonomi2: Aspek(
         nmAspek: "Perikanan",
-        foto: "Foto Ekonomi 2",
+        foto: "assets/image/ekonomi/ekonomi_perikanan.jpg",
         geografis:
             "Sulawesi Selatan adalah provinsi yang memiliki variasi geografis yang signifikan. Meskipun berbatasan dengan Laut Sulawesi, sebagian besar wilayah provinsi ini adalah dataran rendah yang sangat cocok untuk pertanian. Terdapat juga pegunungan, dataran tinggi, dan pesisir yang menciptakan beragam kondisi geografis. Sungai-sungai dan aliran air yang melintasi daerah ini menyediakan pasokan air untuk irigasi pertanian, yang sangat penting untuk meningkatkan produktivitas pertanian.",
         produk: "Ikan, Udang, Kepiting",
@@ -172,7 +172,7 @@ void main() {
       ),
       ekonomi3: Aspek(
         nmAspek: "Pariwisata",
-        foto: "Foto Ekonomi 3",
+        foto: "assets/image/ekonomi/ekonomi_pariwisata.jpg",
         geografis:
             "Sulawesi Selatan adalah provinsi yang memiliki karakteristik geografis yang mendukung sektor pariwisata. Dengan garis pantai yang panjang dan indah di sepanjang Laut Sulawesi dan Teluk Bone, serta keberagaman ekosistem bawah laut yang menakjubkan, provinsi ini menawarkan daya tarik alam yang luar biasa. Terdapat juga taman nasional, cagar alam, gua-gua, dan air terjun yang menghiasi lanskap alam Sulawesi Selatan, menciptakan pengalaman wisata alam yang beragam.",
         produk: "Daya tarik alam, taman nasional dan cagar alam, Situs Budaya",
@@ -294,9 +294,10 @@ void main() {
   );
 
   // print(sulSelData.namaDaerah); // Mengakses properti sesuai kebutuhan
-//   print(sulSelData.ekonomi.ekonomi1.nmAspek); // Contoh: Output "Ekonomi 1"
-//   print(sulSelData.sosialBudaya.sosbud1.nmSosbud); // Contoh: Output "Budaya 1"
-//   print(sulSelData.kuliner.makanan1.nmKuliner); // Contoh: Output "Makanan 1"
-//   print(sulSelData.wisata.tempat1.nmTempat); // Contoh: Output "Tempat Wisata 1"
-// // Dan seterusnya untuk properti-properti dalam objek-objek yang ada
+  //   print(sulSelData.ekonomi.ekonomi1.nmAspek); // Contoh: Output "Ekonomi 1"
+  //   print(sulSelData.sosialBudaya.sosbud1.nmSosbud); // Contoh: Output "Budaya 1"
+  //   print(sulSelData.kuliner.makanan1.nmKuliner); // Contoh: Output "Makanan 1"
+  //   print(sulSelData.wisata.tempat1.nmTempat); // Contoh: Output "Tempat Wisata 1"
+  // // Dan seterusnya untuk properti-properti dalam objek-objek yang ada
+
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sulsel_web/detailPage/ekonomi/ekonomi_desktop.dart';
 import 'package:sulsel_web/homePage.dart';
 import 'package:sulsel_web/detailPage/sosialBudaya.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SosBud(),
+      home: EkonomiDesktopPage(),
     );
   }
 }
