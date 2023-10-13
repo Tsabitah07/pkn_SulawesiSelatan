@@ -71,9 +71,10 @@ flutter:
     - lib/assets/image/sosbud/tarikipas.jpg
     - lib/assets/image/sosbud/tarigandrang.jpg
     - lib/assets/image/sosbud/view.jpg
-    - lib/assets/image/sosbud/apa.jpg
-    - lib/assets/image/sosbud/ma'nene.jpg
-    - lib/assets/image/sosbud/hongkonan.jpg
+    - lib/assets/image/sosbud/apa_bw.jpg
+    - lib/assets/image/sosbud/ma'nene_bw.jpg
+    - lib/assets/image/sosbud/hongkonan_bw.jpg
+    - lib/assets/image/sosbud/adat.jpg
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
