@@ -144,13 +144,15 @@ class DesktopHomePage extends StatelessWidget {
                                 Container(
                                   height:
                                       MediaQuery.of(context).size.height * .4,
-                                  width: MediaQuery.of(context).size.width * .47,
+                                  width:
+                                      MediaQuery.of(context).size.width * .47,
                                   color: Colors.white,
                                   padding: EdgeInsets.all(23),
                                   child: Column(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceBetween,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Text("data"),
                                         ElevatedButton(
@@ -221,94 +223,63 @@ class DesktopHomePage extends StatelessWidget {
                     ),
                   ),
                   Container(
-                      child: Column(
+                      child: Column(children: [
+                        Container(
+                            margin: EdgeInsets.all(34),
+                            child: Text("SOSIAL BUDAYA")),
+                        Text("data"),
+                        Column(
                           children: [
-                            Text("SOSIAL BUDAYA"),
-                          ]
-                      )
-                  ),
-                  Container(
-                      child: Column(
-                          children: []
-                      )
-                  )
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Container(
+                                  width: MediaQuery.of(context).size.width * .27,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(43),
+                                  ),
+                                ),
+                                Container(
+                                  width: MediaQuery.of(context).size.width * .27,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(43),
+                                  ),
+                                ),
+                                Container(
+                                  width: MediaQuery.of(context).size.width * .27,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(43),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Container(
+                                  width: MediaQuery.of(context).size.width * .27,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(43),
+                                  ),
+                                ),
+                                Container(
+                                  width: MediaQuery.of(context).size.width * .27,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(43),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        )
+                  ])),
+                  Container(child: Column(children: []))
                 ],
-              ),
-            ),
-            Align(
-              alignment: Alignment.topCenter,
-              child: Container(
-                padding:
-                    EdgeInsets.only(top: 9, bottom: 9, left: 29, right: 29),
-                height: 67,
-                color: Colors.black54.withOpacity(.2),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Align(
-                      alignment: Alignment.center,
-                      child: InkWell(
-                        onTap: () {},
-                        child: Text(
-                          "Sulawesi Selatan",
-                          style: TextStyle(color: Colors.white, fontSize: 21),
-                        ),
-                      ),
-                    ),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Container(
-                            margin: EdgeInsets.only(left: 9, right: 9),
-                            child: InkWell(
-                              onTap: () {},
-                              child: Text(
-                                "Sosial Budaya",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 21),
-                              ),
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(left: 9, right: 9),
-                            child: InkWell(
-                              onTap: () {},
-                              child: Text(
-                                "Ekonomi",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 21),
-                              ),
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(left: 9, right: 9),
-                            child: InkWell(
-                              onTap: () {},
-                              child: Text(
-                                "Wisata",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 21),
-                              ),
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(left: 9, right: 9),
-                            child: InkWell(
-                              onTap: () {},
-                              child: Text(
-                                "Kuliner",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 21),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
               ),
             ),
           ],
