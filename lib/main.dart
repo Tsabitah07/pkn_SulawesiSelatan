@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sulsel_web/detailPage/ekonomi/ekonomi_desktop.dart';
+import 'package:sulsel_web/detailPage/hp/hpsosbud.dart';
 import 'package:sulsel_web/homePage.dart';
 import 'package:sulsel_web/detailPage/sosialBudaya.dart';
 import 'package:sulsel_web/view/desktop.dart';
