@@ -89,6 +89,11 @@ flutter:
     - lib/assets/image/ibu_kota_sulsel.png
     - lib/assets/image/sosial/histori_background.jpg
     - lib/assets/image/profile/
+    - lib/assets/logo/fish.png
+    - lib/assets/logo/leaf.png
+    - lib/assets/logo/wave.png
+
+
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
