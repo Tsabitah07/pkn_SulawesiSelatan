@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class EkonomiDesktopPage extends StatelessWidget {
@@ -79,36 +78,40 @@ class EkonomiDesktopPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
-              padding: EdgeInsets.all(20.0),
-              decoration: BoxDecoration(
-                color: Color.fromRGBO(255, 217, 192, 1),
-              ),
-              child: Align(
-                alignment: Alignment.center,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'EKONOMI',
-                      style: GoogleFonts.wixMadeforDisplay(
-                        fontWeight: FontWeight.w800,
-                        fontSize: 300.0,
-                        color: Colors.orange,
+            Positioned(
+              left: (MediaQuery.of(context).size.width - 100.0) / 2,
+              top: (MediaQuery.of(context).size.height - 100.0) / 2,
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height,
+                padding: EdgeInsets.all(20.0),
+                decoration: BoxDecoration(
+                  color: Color.fromRGBO(255, 217, 192, 1),
+                ),
+                child: Align(
+                  alignment: Alignment.center,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'EKONOMI',
+                        style: GoogleFonts.wixMadeforDisplay(
+                          fontWeight: FontWeight.w800,
+                          fontSize: 300.0,
+                          color: Colors.orange,
+                        ),
                       ),
-                    ),
-                    Text(
-                      'Aspek ekonomi Sulawesi Selatan didominasi oleh sektor pertanian, perikanan, perdagangan, dan industri, dengan sektor pertambangan juga memiliki peran penting dalam perkembangan ekonominya.',
-                      style: GoogleFonts.spaceGrotesk(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 45,
-                        color: Colors.black,
+                      Text(
+                        'Aspek ekonomi Sulawesi Selatan didominasi oleh sektor pertanian, perikanan, perdagangan, dan industri, dengan sektor pertambangan juga memiliki peran penting dalam perkembangan ekonominya.',
+                        style: GoogleFonts.spaceGrotesk(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 45,
+                          color: Colors.black,
+                        ),
+                        textAlign: TextAlign.center,
                       ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -151,6 +154,12 @@ class EkonomiDesktopPage extends StatelessWidget {
                   color: Colors.black),
               child: Row(
                 children: [
+                  Image.asset(
+                    'lib/assets/logo/leaf.png',
+                    color: Colors.white,
+                    height: 60,
+                  ),
+                  SizedBox(width: 20),
                   Text(
                     'Pertanian',
                     style: GoogleFonts.spaceGrotesk(
@@ -170,6 +179,12 @@ class EkonomiDesktopPage extends StatelessWidget {
                   color: Colors.black),
               child: Row(
                 children: [
+                  Image.asset(
+                    'lib/assets/logo/fish.png',
+                    color: Colors.white,
+                    height: 60,
+                  ),
+                  SizedBox(width: 20),
                   Text(
                     'Perikanan',
                     style: GoogleFonts.spaceGrotesk(
@@ -189,6 +204,12 @@ class EkonomiDesktopPage extends StatelessWidget {
                   color: Colors.black),
               child: Row(
                 children: [
+                  Image.asset(
+                    'lib/assets/logo/wave.png',
+                    color: Colors.white,
+                    height: 60,
+                  ),
+                  SizedBox(width: 20),
                   Text(
                     'Pariwisata',
                     style: GoogleFonts.spaceGrotesk(
