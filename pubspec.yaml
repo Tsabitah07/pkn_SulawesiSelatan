@@ -89,6 +89,17 @@ flutter:
     - lib/assets/image/ibu_kota_sulsel.png
     - lib/assets/image/sosial/histori_background.jpg
     - lib/assets/image/profile/
+    - lib/assets/image/ekonomi/ekonomi_pertanian_x.jpeg
+    - lib/assets/image/ekonomi/ekonomi_peternakan.jpeg
+    - lib/assets/image/ekonomi/ekonomi_pariwisata_2.jpeg
+    - lib/assets/image/ekonomi/ekonomi_perdagangan.jpg
+    - lib/assets/image/sosbud/kesenian.jpg
+    - lib/assets/image/sosbud/adatistiadat.jpg
+    - lib/assets/image/wisata/wisata_tn_wakatobi.jpg
+    - lib/assets/image/wisata/wisata_pulau_selayar.jpg
+    - lib/assets/image/wisata/wisata_rantepao.jpg
+    - lib/assets/image/kuliner/kuliner_pallubasa.jpg
+    - lib/assets/image/kuliner/kuliner_papiong.jpg
 
 
   #   - images/a_dot_burr.jpeg
