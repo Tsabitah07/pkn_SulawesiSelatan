@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sulsel_web/detailPage/Sosbud/perkembanganSosial.dart';
+import 'package:sulsel_web/widget/appbar.dart';
 
 import 'Sosbud/card.dart';
 
@@ -46,6 +47,7 @@ class SosBud extends StatelessWidget {
             //     _daerah("lib/assets/image/sosbud/toraja.jpg"),
             //   ],
             // ),
+            AppBarWidget(),
             SizedBox(height: 30),
             Container(
               color: Colors.black,
