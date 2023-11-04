@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widget/appbar.dart';
+
 class DesktopHomePage extends StatelessWidget {
   const DesktopHomePage({super.key});
 
@@ -17,7 +19,7 @@ class DesktopHomePage extends StatelessWidget {
                     children: [
                       Container(
                         width: MediaQuery.of(context).size.width,
-                        height: MediaQuery.of(context).size.height * .88,
+                        height: MediaQuery.of(context).size.height,
                         decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage(
@@ -31,12 +33,12 @@ class DesktopHomePage extends StatelessWidget {
                       ),
                       Container(
                         padding: EdgeInsets.only(
-                          top: MediaQuery.of(context).size.height * 0.20,
+                          top: MediaQuery.of(context).size.height * 0.27,
                           left: MediaQuery.of(context).size.width * 0.13,
                           right: MediaQuery.of(context).size.width * 0.13,
                         ),
                         child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Column(
                               children: [
@@ -44,27 +46,44 @@ class DesktopHomePage extends StatelessWidget {
                                   image: AssetImage(
                                       "lib/assets/image/ibu_kota_sulsel.png"),
                                   width:
-                                      MediaQuery.of(context).size.width * 0.4,
+                                      MediaQuery.of(context).size.width * 0.39,
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.all(7),
                                   child: Text(
                                     "Makassar, Ibu kota Sulawesi Selatan",
                                     style: TextStyle(
-                                        color: Colors.white, fontSize: 18),
+                                        color: Colors.white, fontSize: 17),
                                   ),
                                 )
                               ],
                             ),
                             Container(
                               constraints: BoxConstraints(
+                                  maxHeight:
+                                      MediaQuery.of(context).size.height * .47,
                                   maxWidth:
-                                      MediaQuery.of(context).size.width * 0.2),
-                              child: Text(
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 17),
-                                textAlign: TextAlign.justify,
+                                      MediaQuery.of(context).size.width * 0.3),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Text(
+                                    "SULAWESI SELATAN",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 37,
+                                      fontWeight: FontWeight.w800,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 17),
+                                    textAlign: TextAlign.justify,
+                                  ),
+                                ],
                               ),
                             )
                           ],
@@ -87,26 +106,75 @@ class DesktopHomePage extends StatelessWidget {
                             children: [
                               Column(
                                 children: [
-                                  Image.asset(
-                                    "lib/assets/image/gubernur_sulsel.jpg",
-                                    width: MediaQuery.of(context).size.width *
-                                        0.19,
+                                  Row(
+                                    children: [
+                                      Image.asset(
+                                        "lib/assets/image/gubernur_sulsel.jpg",
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                0.1,
+                                      ),
+                                      Container(
+                                          margin: EdgeInsets.only(left: 23),
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                "Gubernur Sulawesi Selatan",
+                                                style: TextStyle(fontSize: 17),
+                                              ),
+                                              Text(
+                                                "Dr. Bahtiar Baharuddin, M.Si.",
+                                                style: TextStyle(fontSize: 23),
+                                              )
+                                            ],
+                                          ))
+                                    ],
                                   ),
                                   Container(
-                                    margin: EdgeInsets.only(top: 23),
+                                    margin: EdgeInsets.only(top: 29),
                                     child: Text("Gubernur Sulawesi Selatan"),
                                   )
                                 ],
                               ),
+                              Container(
+                                width: 1.3,
+                                height:
+                                    MediaQuery.of(context).size.height * .57,
+                                color: Colors.black,
+                              ),
                               Column(
                                 children: [
-                                  Image.asset(
-                                    "lib/assets/image/wakil_gubernur_sulsel.jpg",
-                                    width: MediaQuery.of(context).size.width *
-                                        0.19,
+                                  Row(
+                                    children: [
+                                      Image.asset(
+                                        "lib/assets/image/wakil_gubernur_sulsel.jpg",
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                0.1,
+                                      ),
+                                      Container(
+                                        margin: EdgeInsets.only(left: 23),
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              "Wakil Gubernur Sulawesi Selatan",
+                                              style: TextStyle(fontSize: 17),
+                                            ),
+                                            Text(
+                                              "Andi Sudirman Sulaiman",
+                                              style: TextStyle(fontSize: 23),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                   Container(
-                                    margin: EdgeInsets.only(top: 23),
+                                    margin: EdgeInsets.only(top: 29),
                                     child:
                                         Text("Wakil Gubernur Sulawesi Selatan"),
                                   )
@@ -190,17 +258,113 @@ class DesktopHomePage extends StatelessWidget {
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
+                                    Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Image.asset(
+                                            "lib/assets/image/ekonomi/ekonomi_pertanian_x.jpeg",
+                                            width: MediaQuery.of(context)
+                                                    .size
+                                                    .width *
+                                                .35,
+                                            height: MediaQuery.of(context)
+                                                    .size
+                                                    .height *
+                                                .21,
+                                            fit: BoxFit.fill,
+                                          ),
+                                          SizedBox(
+                                            width: MediaQuery.of(context)
+                                                    .size
+                                                    .width *
+                                                .35,
+                                            height: 17,
+                                          ),
+                                          Row(
+                                              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: [
+                                                Image.asset(
+                                                  "lib/assets/image/ekonomi/ekonomi_pariwisata_2.jpeg",
+                                                  width: MediaQuery.of(context)
+                                                          .size
+                                                          .width *
+                                                      .17,
+                                                  height: MediaQuery.of(context)
+                                                          .size
+                                                          .height *
+                                                      .23,
+                                                  fit: BoxFit.cover,
+                                                ),
+                                                SizedBox(
+                                                  width: 17,
+                                                  height: MediaQuery.of(context)
+                                                          .size
+                                                          .height *
+                                                      .17,
+                                                ),
+                                                Image.asset(
+                                                  "lib/assets/image/ekonomi/ekonomi_perikanan.jpg",
+                                                  width: MediaQuery.of(context)
+                                                          .size
+                                                          .width *
+                                                      .17,
+                                                  height: MediaQuery.of(context)
+                                                          .size
+                                                          .height *
+                                                      .23,
+                                                  fit: BoxFit.cover,
+                                                )
+                                              ])
+                                        ]),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              .463,
+                                      width: 17,
+                                    ),
+                                    Image.asset(
+                                      "lib/assets/image/ekonomi/ekonomi_peternakan.jpeg",
+                                      width: MediaQuery.of(context).size.width *
+                                          .13,
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              .463,
+                                      fit: BoxFit.cover,
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              .463,
+                                      width: 17,
+                                    ),
                                     Column(children: [
-                                      Image.asset("name"),
-                                      Row(children: [
-                                        Image.asset("name"),
-                                        Image.asset("name")
-                                      ])
-                                    ]),
-                                    Image.asset("name"),
-                                    Column(children: [
-                                      Image.asset("name"),
-                                      Image.asset("name")
+                                      Image.asset(
+                                        "lib/assets/image/ekonomi/ekonomi_perdagangan.jpg",
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                .21,
+                                        height:
+                                            MediaQuery.of(context).size.height *
+                                                .22,
+                                        fit: BoxFit.cover,
+                                      ),
+                                      SizedBox(
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                .21,
+                                        height: 17,
+                                      ),
+                                      Image.asset(
+                                        "lib/assets/image/ekonomi/ekonomi_pertanian.jpg",
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                .21,
+                                        height:
+                                            MediaQuery.of(context).size.height *
+                                                .22,
+                                        fit: BoxFit.cover,
+                                      ),
                                     ])
                                   ],
                                 ),
@@ -223,65 +387,361 @@ class DesktopHomePage extends StatelessWidget {
                     ),
                   ),
                   Container(
+                      margin: EdgeInsets.only(bottom: 23),
                       child: Column(children: [
                         Container(
-                            margin: EdgeInsets.all(34),
-                            child: Text("SOSIAL BUDAYA")),
-                        Text("data"),
+                            margin: EdgeInsets.only(top: 34, bottom: 9),
+                            child: Text(
+                              "SOSIAL BUDAYA",
+                              style: TextStyle(fontSize: 29),
+                            )),
+                        Container(
+                            margin: EdgeInsets.only(bottom: 9),
+                            child: Text("data")),
                         Column(
                           children: [
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Container(
-                                  width: MediaQuery.of(context).size.width * .27,
+                                  width:
+                                      MediaQuery.of(context).size.width * .14,
+                                  height:
+                                      MediaQuery.of(context).size.width * .14,
                                   decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(43),
-                                  ),
+                                      borderRadius: BorderRadius.circular(129),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              "lib/assets/image/sosbud/kesenian.jpg"),
+                                          fit: BoxFit.cover)),
                                 ),
                                 Container(
-                                  width: MediaQuery.of(context).size.width * .27,
+                                  width:
+                                      MediaQuery.of(context).size.width * .14,
+                                  height:
+                                      MediaQuery.of(context).size.width * .14,
                                   decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(43),
-                                  ),
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(129),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              "lib/assets/image/sosbud/apa.jpg"),
+                                          fit: BoxFit.cover)),
                                 ),
                                 Container(
-                                  width: MediaQuery.of(context).size.width * .27,
+                                  width:
+                                      MediaQuery.of(context).size.width * .14,
+                                  height:
+                                      MediaQuery.of(context).size.width * .14,
                                   decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(43),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                Container(
-                                  width: MediaQuery.of(context).size.width * .27,
-                                  decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(43),
-                                  ),
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(129),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              "lib/assets/image/sosbud/ma'nene.jpg"),
+                                          fit: BoxFit.cover)),
                                 ),
                                 Container(
-                                  width: MediaQuery.of(context).size.width * .27,
+                                  width:
+                                      MediaQuery.of(context).size.width * .14,
+                                  height:
+                                      MediaQuery.of(context).size.width * .14,
                                   decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(43),
-                                  ),
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(129),
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              "lib/assets/image/sosbud/adatistiadat.jpg"),
+                                          fit: BoxFit.cover)),
                                 ),
                               ],
                             ),
                           ],
                         )
-                  ])),
-                  Container(child: Column(children: []))
+                      ])),
+                  Container(
+                      margin: EdgeInsets.only(bottom: 23),
+                      child: Column(children: [
+                        Container(
+                          margin: EdgeInsets.only(top: 34, bottom: 13),
+                          child: Text(
+                            "KULINER DAN WISATA",
+                            style: TextStyle(fontSize: 29),
+                          ),
+                        ),
+                        Text("data"),
+                        Container(
+                            margin: EdgeInsets.only(
+                                left: MediaQuery.of(context).size.width * .05,
+                                right: MediaQuery.of(context).size.width * .05),
+                            height: MediaQuery.of(context).size.height * .62,
+                            width: MediaQuery.of(context).size.width,
+                            // color: Colors.black54,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Align(
+                                    alignment: Alignment.topCenter,
+                                    child: Container(
+                                      margin: EdgeInsets.only(
+                                          top: MediaQuery.of(context)
+                                                  .size
+                                                  .height *
+                                              .042),
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              .45,
+                                      width:
+                                          MediaQuery.of(context).size.width *
+                                              .145,
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.all(
+                                              Radius.circular(23)),
+                                          image: DecorationImage(
+                                              image: AssetImage(
+                                                  "lib/assets/image/wisata/wisata_tn_wakatobi.jpg"),
+                                              fit: BoxFit.cover
+                                          ),
+                                      ),
+                                      child: Stack(
+                                        children: [
+                                          Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.black.withOpacity(.24),
+                                                borderRadius: BorderRadius.all(
+                                                    Radius.circular(23),
+                                                ),
+                                              )
+                                          ),
+                                          Align(
+                                            alignment: Alignment.bottomLeft,
+                                            child: Container(
+                                              padding: EdgeInsets.all(9),
+                                                child: Text("Taman Nasional Wakatobi",
+                                                    style: TextStyle(
+                                                        color: Colors.white,
+                                                      fontSize: 17,
+                                                      fontWeight: FontWeight.w700
+                                                    ),
+                                                ),
+                                            )
+                                          )
+                                        ],
+                                      )
+                                    ),
+                                ),
+                                Align(
+                                    alignment: Alignment.bottomCenter,
+                                  child: Container(
+                                      margin: EdgeInsets.only(
+                                          top: MediaQuery.of(context)
+                                              .size
+                                              .height *
+                                              .042),
+                                      height:
+                                      MediaQuery.of(context).size.height *
+                                          .45,
+                                      width:
+                                      MediaQuery.of(context).size.width *
+                                          .145,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(23)),
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                "lib/assets/image/kuliner/kuliner_papiong.jpg"),
+                                            fit: BoxFit.cover
+                                        ),
+                                      ),
+                                      child: Stack(
+                                        children: [
+                                          Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.black.withOpacity(.24),
+                                                borderRadius: BorderRadius.all(
+                                                  Radius.circular(23),
+                                                ),
+                                              )
+                                          ),
+                                          Align(
+                                              alignment: Alignment.bottomLeft,
+                                              child: Container(
+                                                padding: EdgeInsets.all(9),
+                                                child: Text("Papiong",
+                                                  style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontSize: 17,
+                                                      fontWeight: FontWeight.w700
+                                                  ),
+                                                ),
+                                              )
+                                          )
+                                        ],
+                                      )
+                                  ),
+                                ),
+                                Align(
+                                    alignment: Alignment.topCenter,
+                                  child: Container(
+                                      margin: EdgeInsets.only(
+                                          top: MediaQuery.of(context)
+                                              .size
+                                              .height *
+                                              .042),
+                                      height:
+                                      MediaQuery.of(context).size.height *
+                                          .45,
+                                      width:
+                                      MediaQuery.of(context).size.width *
+                                          .145,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(23)),
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                "lib/assets/image/wisata/wisata_pulau_selayar.jpg"),
+                                            fit: BoxFit.cover
+                                        ),
+                                      ),
+                                      child: Stack(
+                                        children: [
+                                          Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.black.withOpacity(.24),
+                                                borderRadius: BorderRadius.all(
+                                                  Radius.circular(23),
+                                                ),
+                                              )
+                                          ),
+                                          Align(
+                                              alignment: Alignment.bottomLeft,
+                                              child: Container(
+                                                padding: EdgeInsets.all(9),
+                                                child: Text("Pulau Selayar",
+                                                  style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontSize: 17,
+                                                      fontWeight: FontWeight.w700
+                                                  ),
+                                                ),
+                                              )
+                                          )
+                                        ],
+                                      )
+                                  ),
+                                ),
+                                Align(
+                                    alignment: Alignment.bottomCenter,
+                                  child: Container(
+                                      margin: EdgeInsets.only(
+                                          top: MediaQuery.of(context)
+                                              .size
+                                              .height *
+                                              .042),
+                                      height:
+                                      MediaQuery.of(context).size.height *
+                                          .45,
+                                      width:
+                                      MediaQuery.of(context).size.width *
+                                          .145,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(23)),
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                "lib/assets/image/kuliner/kuliner_pallubasa.jpg"),
+                                            fit: BoxFit.cover
+                                        ),
+                                      ),
+                                      child: Stack(
+                                        children: [
+                                          Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.black.withOpacity(.24),
+                                                borderRadius: BorderRadius.all(
+                                                  Radius.circular(23),
+                                                ),
+                                              )
+                                          ),
+                                          Align(
+                                              alignment: Alignment.bottomLeft,
+                                              child: Container(
+                                                padding: EdgeInsets.all(9),
+                                                child: Text("Pallubasa",
+                                                  style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontSize: 17,
+                                                      fontWeight: FontWeight.w700
+                                                  ),
+                                                ),
+                                              )
+                                          )
+                                        ],
+                                      )
+                                  ),
+                                ),
+                                Align(
+                                    alignment: Alignment.topCenter,
+                                  child: Container(
+                                      margin: EdgeInsets.only(
+                                          top: MediaQuery.of(context)
+                                              .size
+                                              .height *
+                                              .042),
+                                      height:
+                                      MediaQuery.of(context).size.height *
+                                          .45,
+                                      width:
+                                      MediaQuery.of(context).size.width *
+                                          .145,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(23)),
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                "lib/assets/image/wisata/wisata_rantepao.jpg"),
+                                            fit: BoxFit.cover
+                                        ),
+                                      ),
+                                      child: Stack(
+                                        children: [
+                                          Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.black.withOpacity(.24),
+                                                borderRadius: BorderRadius.all(
+                                                  Radius.circular(23),
+                                                ),
+                                              )
+                                          ),
+                                          Align(
+                                              alignment: Alignment.bottomLeft,
+                                              child: Container(
+                                                padding: EdgeInsets.all(9),
+                                                child: Text("Rantepao",
+                                                  style: TextStyle(
+                                                      fontSize: 17,
+                                                      fontWeight: FontWeight.w700,
+                                                    foreground: Paint()
+                                                      ..style = PaintingStyle.stroke
+                                                      ..strokeWidth = 2.0  // Adjust the border thickness
+                                                      ..color = Colors.black,
+                                                  ),
+                                                ),
+                                              )
+                                          )
+                                        ],
+                                      )
+                                  ),
+                                ),
+                              ],
+                            ),
+                        ),
+                      ]),
+                  ),
                 ],
               ),
             ),
+            AppBarWidget()
           ],
         ),
       ),
