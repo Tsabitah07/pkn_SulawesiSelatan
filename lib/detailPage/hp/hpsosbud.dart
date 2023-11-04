@@ -18,6 +18,7 @@ class SosialBudayaHp extends StatelessWidget {
               children: [
                 Text("Cultural of Sulawesi Selatan", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold,
                   color: Colors.black,),),
+                SizedBox(height: screenHeight *0.02,),
                 Container(
                   color: Colors.black,
                   child: Padding(
