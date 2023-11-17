@@ -37,6 +37,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_fonts: ^6.1.0
+  carousel_slider: ^4.2.1
+
 
 dev_dependencies:
   flutter_test:
@@ -74,7 +76,7 @@ flutter:
     - lib/assets/image/ekonomi/ekonomi_pariwisata.jpg
     - lib/assets/image/ekonomi/ekonomi_perikanan.jpg
     - lib/assets/image/ekonomi/ekonomi_pertanian.jpg
-    - lib/assets/image/sosbud/view.jpg
+    - lib/assets/image/sosbud/vieww.jpg
     - lib/assets/image/sosbud/apa_bw.jpg
     - lib/assets/image/sosbud/ma'nene_bw.jpg
     - lib/assets/image/sosbud/hongkonan_bw.jpg
