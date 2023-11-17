@@ -91,7 +91,7 @@ class EkonomiDesktopPage extends StatelessWidget {
         Container(
           padding: EdgeInsets.symmetric(
               horizontal: MediaQuery.of(context).size.width * 0.146),
-          height: MediaQuery.of(context).size.height * 0.23,
+          height: MediaQuery.of(context).size.height * 0.40,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -124,21 +124,22 @@ class EkonomiDesktopPage extends StatelessWidget {
                 EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.03),
             padding: EdgeInsets.symmetric(
                 horizontal: MediaQuery.of(context).size.width * 0.146,
-                vertical: MediaQuery.of(context).size.height * 0.02),
+                vertical: MediaQuery.of(context).size.height * 0.05),
             width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(color: Color(0xFFFFD9C0)),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
                       'PENDAPATAN PROVINSI SULAWESI SELATAN',
                       style: GoogleFonts.poppins(
                           fontWeight: FontWeight.w600, fontSize: 24),
                     ),
-                    Text('data'),
-                    Text('data'),
-                    // PendapatanEkonomiComponent()
+                    SizedBox(height: 10,),
+                    Pendapatan()
                   ],
                 ),
                 Image.asset('lib/assets/image/ekonomi/ekonomi_pajak.jpg')
@@ -198,7 +199,7 @@ class EkonomiDesktopPage extends StatelessWidget {
                   Text(
                     'Pendapatan regional Provinsi Sulawesi Selatan berasal dari tiga sumber utama: Pendapatan Asli Daerah (PAD),\nPendapatan Transfer, dan Pendapatan Lain-lain.',
                     style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w500, fontSize: 14),
+                        fontWeight: FontWeight.w500, fontSize: 13),
                   )
                 ],
               ),
