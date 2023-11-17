@@ -96,6 +96,8 @@ flutter:
     - lib/assets/image/ekonomi/ekonomi_peternakan.jpeg
     - lib/assets/image/ekonomi/ekonomi_pariwisata_2.jpeg
     - lib/assets/image/ekonomi/ekonomi_perdagangan.jpg
+    - lib/assets/image/ekonomi/ekonomi_produk.jpg
+    - lib/assets/image/ekonomi/ekonomi_pajak.jpg
     - lib/assets/image/sosbud/kesenian.jpg
     - lib/assets/image/sosbud/adatistiadat.jpg
     - lib/assets/image/wisata/wisata_tn_wakatobi.jpg
