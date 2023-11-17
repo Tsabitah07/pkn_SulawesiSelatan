@@ -10,9 +10,9 @@ class SosBud extends StatelessWidget {
 
   Widget _daerah(String imagePath) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 8),
+      padding: EdgeInsets.symmetric(horizontal: 15),
       child: CircleAvatar(
-        radius: 40,
+        radius: 60,
         backgroundImage: AssetImage(imagePath),
       ),
     );
@@ -27,27 +27,6 @@ class SosBud extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 30),
         child: ListView(
           children: [
-            // Padding(
-            //   padding: const EdgeInsets.symmetric(vertical: 30),
-            //   child: Center(
-            //     child: Text(
-            //       'Sosial Budaya',
-            //       style: TextStyle(
-            //         fontSize: 33,
-            //         fontWeight: FontWeight.bold,
-            //       ),
-            //     ),
-            //   ),
-            // ),
-            // Row(
-            //   mainAxisAlignment: MainAxisAlignment.center,
-            //   children: <Widget>[
-            //     _daerah("lib/assets/image/sosbud/kerbau.jpg"),
-            //     _daerah("lib/assets/image/sosbud/makassar.jpg"),
-            //     _daerah("lib/assets/image/sosbud/selayar.jpg"),
-            //     _daerah("lib/assets/image/sosbud/toraja.jpg"),
-            //   ],
-            // ),
             AppBarWidget(),
             SizedBox(height: 30),
             Container(
@@ -89,7 +68,17 @@ class SosBud extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 60),
+            SizedBox(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                _daerah("lib/assets/image/sosbud/kerbau.jpg"),
+                _daerah("lib/assets/image/sosbud/makassar.jpg"),
+                _daerah("lib/assets/image/sosbud/selayar.jpg"),
+                _daerah("lib/assets/image/sosbud/toraja.jpg"),
+              ],
+            ),
+            SizedBox(height: 50),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
