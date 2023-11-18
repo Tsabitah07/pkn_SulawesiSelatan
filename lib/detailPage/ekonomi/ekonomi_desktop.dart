@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sulsel_web/detailPage/ekonomi/components/pendapatan_ekonomi_component.dart';
 
 class EkonomiDesktopPage extends StatelessWidget {
   const EkonomiDesktopPage({super.key});
