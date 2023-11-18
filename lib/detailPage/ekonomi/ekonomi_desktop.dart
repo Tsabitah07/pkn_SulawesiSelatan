@@ -166,6 +166,7 @@ class EkonomiDesktopPage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(
                     horizontal: MediaQuery.of(context).size.width * 0.146),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
