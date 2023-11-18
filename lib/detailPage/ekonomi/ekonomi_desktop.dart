@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:sulsel_web/detailPage/ekonomi/components/pendapatan_ekonomi_component.dart';
 
 class EkonomiDesktopPage extends StatelessWidget {
   const EkonomiDesktopPage({super.key});
@@ -165,6 +164,7 @@ class EkonomiDesktopPage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(
                     horizontal: MediaQuery.of(context).size.width * 0.146),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
