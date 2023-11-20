@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:sulsel_web/controller/homeController.dart';
+import 'package:sulsel_web/widget/appBarPhone.dart';
 
 import '../widget/appbar.dart';
 
 class DesktopHomePage extends StatelessWidget {
-  const DesktopHomePage({super.key});
+  final controller = Get.put(HomePageController());
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +31,7 @@ class DesktopHomePage extends StatelessWidget {
                         ),
                         child: Container(
                           color: Colors.black
-                              .withOpacity(0.7), // Adjust opacity as needed
+                              .withOpacity(0.5), // Adjust opacity as needed
                         ),
                       ),
                       Container(
@@ -61,13 +64,13 @@ class DesktopHomePage extends StatelessWidget {
                             Container(
                               constraints: BoxConstraints(
                                   maxHeight:
-                                      MediaQuery.of(context).size.height * .47,
+                                      MediaQuery.of(context).size.height * .6,
                                   maxWidth:
                                       MediaQuery.of(context).size.width * 0.3),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
+                                    MainAxisAlignment.center,
                                 children: [
                                   Text(
                                     "SULAWESI SELATAN",
@@ -78,9 +81,9 @@ class DesktopHomePage extends StatelessWidget {
                                     ),
                                   ),
                                   Text(
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                                     style: TextStyle(
-                                        color: Colors.white, fontSize: 17),
+                                        color: Colors.white, fontSize: 14),
                                     textAlign: TextAlign.justify,
                                   ),
                                 ],
@@ -92,96 +95,93 @@ class DesktopHomePage extends StatelessWidget {
                     ],
                   ),
                   Container(
-                      margin: EdgeInsets.all(27),
+                      margin: EdgeInsets.all(17),
                       child: Column(children: [
                         Text(
                           "PEMIMPIN SULAWESI SELATAN",
                           style: TextStyle(fontSize: 29),
                           textAlign: TextAlign.center,
                         ),
-                        Container(
-                          margin: EdgeInsets.only(left: 27, right: 27, top: 23),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Column(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Image.asset(
-                                        "lib/assets/image/gubernur_sulsel.jpg",
-                                        width:
-                                            MediaQuery.of(context).size.width *
-                                                0.1,
-                                      ),
-                                      Container(
-                                          margin: EdgeInsets.only(left: 23),
-                                          child: Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Text(
-                                                "Gubernur Sulawesi Selatan",
-                                                style: TextStyle(fontSize: 17),
-                                              ),
-                                              Text(
-                                                "Dr. Bahtiar Baharuddin, M.Si.",
-                                                style: TextStyle(fontSize: 23),
-                                              )
-                                            ],
-                                          ))
-                                    ],
-                                  ),
-                                  Container(
-                                    margin: EdgeInsets.only(top: 29),
-                                    child: Text("Gubernur Sulawesi Selatan"),
-                                  )
-                                ],
-                              ),
-                              Container(
-                                width: 1.3,
-                                height:
-                                    MediaQuery.of(context).size.height * .57,
-                                color: Colors.black,
-                              ),
-                              Column(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Image.asset(
-                                        "lib/assets/image/wakil_gubernur_sulsel.jpg",
-                                        width:
-                                            MediaQuery.of(context).size.width *
-                                                0.1,
-                                      ),
-                                      Container(
-                                        margin: EdgeInsets.only(left: 23),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Image.asset(
+                                      "lib/assets/image/gubernur_sulsel.jpg",
+                                      width:
+                                          MediaQuery.of(context).size.width *
+                                              0.1,
+                                    ),
+                                    Container(
+                                        margin: EdgeInsets.only(left: 10),
                                         child: Column(
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              "Wakil Gubernur Sulawesi Selatan",
-                                              style: TextStyle(fontSize: 17),
+                                              "Gubernur Sulawesi Selatan",
+                                              style: TextStyle(fontSize: 15),
                                             ),
                                             Text(
-                                              "Andi Sudirman Sulaiman",
-                                              style: TextStyle(fontSize: 23),
+                                              "Dr. Bahtiar Baharuddin, M.Si.",
+                                              style: TextStyle(fontSize: 19),
                                             )
                                           ],
-                                        ),
+                                        ))
+                                  ],
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(top: 29),
+                                  child: Text("Gubernur Sulawesi Selatan"),
+                                )
+                              ],
+                            ),
+                            Container(
+                              width: 1.3,
+                              height:
+                                  MediaQuery.of(context).size.height * .57,
+                              color: Colors.black,
+                            ),
+                            Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Image.asset(
+                                      "lib/assets/image/wakil_gubernur_sulsel.jpg",
+                                      width:
+                                          MediaQuery.of(context).size.width *
+                                              0.1,
+                                    ),
+                                    Container(
+                                      margin: EdgeInsets.only(left: 10),
+                                      child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Wakil Gubernur Sulawesi Selatan",
+                                            style: TextStyle(fontSize: 15),
+                                          ),
+                                          Text(
+                                            "Andi Sudirman Sulaiman",
+                                            style: TextStyle(fontSize: 19),
+                                          )
+                                        ],
                                       ),
-                                    ],
-                                  ),
-                                  Container(
-                                    margin: EdgeInsets.only(top: 29),
-                                    child:
-                                        Text("Wakil Gubernur Sulawesi Selatan"),
-                                  )
-                                ],
-                              )
-                            ],
-                          ),
+                                    ),
+                                  ],
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(top: 29),
+                                  child:
+                                      Text("Wakil Gubernur Sulawesi Selatan"),
+                                )
+                              ],
+                            )
+                          ],
                         ),
                       ])),
                   Container(

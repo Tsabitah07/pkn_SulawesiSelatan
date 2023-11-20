@@ -9,8 +9,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: DesktopHomePage(),
+      body: LayoutBuilder(
+        builder: (BuildContext context, BoxConstraints constraints) {
+          if (constraints.maxWidth < 700) {
+            return PhoneHomePage();
+          } else {
+            return DesktopHomePage();
+          }
+        }
       ),
     );
   }

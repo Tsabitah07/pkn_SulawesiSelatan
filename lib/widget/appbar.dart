@@ -7,7 +7,7 @@ Widget AppBarWidget(){
       padding:
       EdgeInsets.only(top: 9, bottom: 9, left: 29, right: 29),
       height: 67,
-      color: Colors.black54.withOpacity(.2),
+      color: Colors.transparent,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
