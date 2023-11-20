@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:sulsel_web/detailPage/Sosbud/perkembanganSosial.dart';
 import 'package:sulsel_web/widget/appbar.dart';
 
@@ -9,9 +10,9 @@ class SosBud extends StatelessWidget {
 
   Widget _daerah(String imagePath) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 8),
+      padding: EdgeInsets.symmetric(horizontal: 15),
       child: CircleAvatar(
-        radius: 40,
+        radius: 60,
         backgroundImage: AssetImage(imagePath),
       ),
     );
@@ -26,31 +27,10 @@ class SosBud extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 30),
         child: ListView(
           children: [
-            // Padding(
-            //   padding: const EdgeInsets.symmetric(vertical: 30),
-            //   child: Center(
-            //     child: Text(
-            //       'Sosial Budaya',
-            //       style: TextStyle(
-            //         fontSize: 33,
-            //         fontWeight: FontWeight.bold,
-            //       ),
-            //     ),
-            //   ),
-            // ),
-            // Row(
-            //   mainAxisAlignment: MainAxisAlignment.center,
-            //   children: <Widget>[
-            //     _daerah("lib/assets/image/sosbud/kerbau.jpg"),
-            //     _daerah("lib/assets/image/sosbud/makassar.jpg"),
-            //     _daerah("lib/assets/image/sosbud/selayar.jpg"),
-            //     _daerah("lib/assets/image/sosbud/toraja.jpg"),
-            //   ],
-            // ),
             AppBarWidget(),
             SizedBox(height: 30),
             Container(
-              color: Colors.black,
+              color: Color(0xFFFFC6AC),
               child: Padding(
                 padding: const EdgeInsets.all(30.0),
                 child: Row(
@@ -61,16 +41,16 @@ class SosBud extends StatelessWidget {
                       child: Column(
                         children: [
                           Text("Cultural of Sulawesi Selatan",
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
-                              color: Colors.white,
+                              color: Colors.black,
                             ),),
                           SizedBox(height: 20),
                           Text("Sulawesi Selatan, dengan kaya akan kearifan lokal, keberagaman adat istiadat, budaya, dan seni di setiap daerahnya, merupakan provinsi yang patut diperhitungkan secara nasional. Kesenian di Sulawesi Selatan diakui sebagai kebudayaan tinggi yang memiliki dampak besar terhadap lingkungan dan psikologis, karena seni tidak hanya mencakup aspek kehidupan, melainkan juga memberikan kontribusi penting. Provinsi ini mencakup berbagai adat kebudayaan, terutama dari suku mayoritas seperti Makassar, Bugis, dan Toraja. Budaya Tana Toraja, terkenal hingga mancanegara, memiliki daya tarik khusus. Rumah adat di Sulsel dari ketiga daerah utama memiliki arsitektur serupa dengan bangunan di atas tiang. Seni daerah, seperti Tari Pakarena dan Tari Empat Etnis, mencerminkan keberagaman budaya etnis Makassar, Bugis, Toraja, dan Mandar.",
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                               fontSize: 16,
-                              color: Colors.white,
+                              color: Colors.black,
                             ),
                           ),
                         ],
@@ -79,7 +59,7 @@ class SosBud extends StatelessWidget {
                     Flexible(
                       flex: 2,
                       child: Image.asset(
-                        'lib/assets/image/sosbud/view.jpg',
+                        'lib/assets/image/sosbud/vieww.jpg',
                         width: 1050.0,
                         height: 550.0,
                       ),
@@ -88,14 +68,24 @@ class SosBud extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 60),
+            SizedBox(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                _daerah("lib/assets/image/sosbud/kerbau.jpg"),
+                _daerah("lib/assets/image/sosbud/makassar.jpg"),
+                _daerah("lib/assets/image/sosbud/selayar.jpg"),
+                _daerah("lib/assets/image/sosbud/toraja.jpg"),
+              ],
+            ),
+            SizedBox(height: 50),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Flexible(
                   flex: 1,
                     child: Text(
-                      "Perkembangan Sosial", style: TextStyle(
+                      "Perkembangan Sosial", style: GoogleFonts.poppins(
                       fontSize: 30,
                       fontWeight: FontWeight.bold
                     ),
@@ -106,7 +96,7 @@ class SosBud extends StatelessWidget {
                   flex: 1,
                     child: Text(
                       "Sulawesi Selatan mengalami pertumbuhan ekonomi, urbanisasi, dan pembangunan infrastruktur yang meningkatkan taraf hidup dan peluang kerja. Meskipun perubahan ini, nilai-nilai budaya dan tradisi tetap dijaga, menciptakan perpaduan antara modernitas dan tradisi yang unik di wilayah ini.",
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
                         fontSize: 16
                       ),
                     ),
@@ -127,13 +117,16 @@ class SosBud extends StatelessWidget {
                       ),
                       Text(
                         "Nilai Budaya",
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                           fontWeight: FontWeight.bold,
                           fontSize: 30,
                         ),
                       ),
                       SizedBox(height: 10),
-                      Text("Gotong royong, keramahtamahan, penghormatan leluhur, keberagaman budaya, Islam, dan keluarga kuat."),
+                      Text("Gotong royong, keramahtamahan, penghormatan leluhur, keberagaman budaya, Islam, dan keluarga kuat.",
+                      style: GoogleFonts.poppins(
+                        fontSize: 14
+                      ),),
                     ],
                   ),
                   SizedBox(width: 40),
@@ -146,13 +139,16 @@ class SosBud extends StatelessWidget {
                       ),
                       Text(
                         "Adat Istiadat",
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                           fontWeight: FontWeight.bold,
                           fontSize: 30,
                         ),
                       ),
                       SizedBox(height: 10),
-                      Text("Beragam etnis dengan tradisi unik dari generasi ke generasi."),
+                      Text("Beragam etnis dengan tradisi unik dari generasi ke generasi.",
+                      style: GoogleFonts.poppins(
+                        fontSize: 14
+                      ),),
                     ],
                   ),
                 ],
@@ -163,12 +159,16 @@ class SosBud extends StatelessWidget {
               child: Column(
                 children: [
                   Text("Kesenian",
-                    style: TextStyle(
+                    style: GoogleFonts.poppins(
                       fontWeight: FontWeight.bold,
                       fontSize: 30,
                     ),),
                   SizedBox(height: 10,),
-                  Text("Seni tradisional di Sulawesi Selatan merupakan bagian integral dari budaya mereka yang memperkaya budaya wilayah tersebut dan menjadi daya tarik budaya yang unik.."),
+                  Text("Seni tradisional di Sulawesi Selatan merupakan bagian integral dari "
+                      "budaya mereka yang memperkaya budaya wilayah tersebut dan menjadi daya tarik budaya yang unik..",
+                  style: GoogleFonts.poppins(
+                    fontSize: 14
+                  ),),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
