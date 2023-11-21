@@ -96,7 +96,15 @@ flutter:
     - lib/assets/image/wisata/pulau_kapoposang.jpg
     - lib/assets/image/wisata/Taman_Bantimurung.jpg
     - lib/assets/image/wisata/Wisata_Sulsel.jpg
-    - 
+    - lib/assets/image/kuliner/kuliner_bg.jpg
+    - lib/assets/image/kuliner/kuliner_papiong.jpg
+    - lib/assets/image/kuliner/kuliner_sup_ikan.jpg
+    - lib/assets/image/kuliner/kuliner_pallubasa.jpg
+    - lib/assets/image/kuliner/kuliner_bubur_manado.jpg
+    - lib/assets/image/kuliner/kuliner_babi_panggang.jpg
+    - lib/assets/image/kuliner/pisang_epe.jpeg
+
+
     
 
 
