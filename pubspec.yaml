@@ -28,6 +28,8 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  flutter_flip_card: ^0.0.4
+  expansion_tile_card: ^3.0.0
   get:
   flutter:
     sdk: flutter
@@ -37,6 +39,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_fonts: ^6.1.0
+  carousel_slider: ^4.2.1
+
 
 dev_dependencies:
   flutter_test:
@@ -74,7 +78,9 @@ flutter:
     - lib/assets/image/ekonomi/ekonomi_pariwisata.jpg
     - lib/assets/image/ekonomi/ekonomi_perikanan.jpg
     - lib/assets/image/ekonomi/ekonomi_pertanian.jpg
+    - lib/assets/image/sosbud/vieww.jpg
     - lib/assets/image/sosbud/view.jpg
+    - lib/assets/image/sosbud/toraa.jpg
     - lib/assets/image/sosbud/apa_bw.jpg
     - lib/assets/image/sosbud/ma'nene_bw.jpg
     - lib/assets/image/sosbud/hongkonan_bw.jpg
@@ -89,6 +95,19 @@ flutter:
     - lib/assets/image/ibu_kota_sulsel.png
     - lib/assets/image/sosial/histori_background.jpg
     - lib/assets/image/profile/
+    - lib/assets/image/ekonomi/ekonomi_pertanian_x.jpeg
+    - lib/assets/image/ekonomi/ekonomi_peternakan.jpeg
+    - lib/assets/image/ekonomi/ekonomi_pariwisata_2.jpeg
+    - lib/assets/image/ekonomi/ekonomi_perdagangan.jpg
+    - lib/assets/image/ekonomi/ekonomi_produk.jpg
+    - lib/assets/image/ekonomi/ekonomi_pajak.jpg
+    - lib/assets/image/sosbud/kesenian.jpg
+    - lib/assets/image/sosbud/adatistiadat.jpg
+    - lib/assets/image/wisata/wisata_tn_wakatobi.jpg
+    - lib/assets/image/wisata/wisata_pulau_selayar.jpg
+    - lib/assets/image/wisata/wisata_rantepao.jpg
+    - lib/assets/image/kuliner/kuliner_pallubasa.jpg
+    - lib/assets/image/kuliner/kuliner_papiong.jpg
     - lib/assets/logo/fish.png
     - lib/assets/logo/leaf.png
     - lib/assets/logo/wave.png
@@ -106,7 +125,6 @@ flutter:
 
 
     
-
 
 
   #   - images/a_dot_burr.jpeg
