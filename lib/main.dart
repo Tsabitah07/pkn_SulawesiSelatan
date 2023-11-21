@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:sulsel_web/data/dataSulSel.dart';
 import 'package:sulsel_web/detailPage/Sosbud/sosbud.dart';
 import 'package:sulsel_web/detailPage/ekonomi/ekonomiResponsive.dart';
 import 'package:sulsel_web/detailPage/ekonomi/ekonomi_desktop.dart';
 import 'package:sulsel_web/detailPage/ekonomi/ekonomi_phone.dart';
 import 'package:sulsel_web/detailPage/hp/hpsosbud.dart';
+import 'package:sulsel_web/detailPage/kuliner.dart';
+import 'package:sulsel_web/detailPage/wisata.dart';
 import 'package:sulsel_web/homePage.dart';
 import 'package:sulsel_web/detailPage/sosialBudaya.dart';
 import 'package:sulsel_web/view/desktop.dart';

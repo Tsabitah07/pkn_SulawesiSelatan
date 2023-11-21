@@ -1,49 +1,69 @@
 import 'package:flutter/material.dart';
 import 'package:sulsel_web/widget/appbar.dart';
 
-class Wisata extends StatelessWidget {
-  const Wisata({Key? key});
+class DesktopKuliner extends StatelessWidget {
+  const DesktopKuliner({Key? key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             AppBarWidget(),
-            Stack(
-              children: [
-                Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height * 0.5,
-                  decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.3),
-                    image: DecorationImage(
-                      image: AssetImage('lib/assets/image/wisata/Wisata_Sulsel.jpg'),
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        "Wisata",
-                        style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold, color: Colors.white),
-                      ),
-                      Text(
-                        'deskripsi',
-                        style: TextStyle(fontSize: 30, color: Colors.white),
-                      ),
-                    ],
-                  ),
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height * 0.5,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('lib/assets/image/kuliner/kuliner_bg.jpg'),
+                  fit: BoxFit.cover,
                 ),
-              ],
+              ),
+              child: Container(
+                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 25),
+                decoration: BoxDecoration(
+                  color: Colors.black.withOpacity(0.3),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.5),
+                      blurRadius: 10,
+                      offset: Offset(0, 5),
+                    ),
+                  ],
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Kuliner",
+                      style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: 'YourFont'),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      'Temukan cita rasa terbaik dari setiap sudut Sulawesi Selatan.',
+                      style: TextStyle(fontSize: 20, color: Colors.white, fontFamily: 'YourFont'),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              ),
             ),
             Container(
               padding: EdgeInsets.symmetric(vertical: 20, horizontal: 25),
               margin: EdgeInsets.symmetric(vertical: 45),
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height * .7,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [Colors.white, Colors.white],
+                ),
+                borderRadius: BorderRadius.circular(15),
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -54,7 +74,7 @@ class Wisata extends StatelessWidget {
                       borderRadius: BorderRadius.circular(25),
                       image: DecorationImage(
                         image: AssetImage(
-                          'lib/assets/image/wisata/pulau_kapoposang.jpg',
+                          'lib/assets/image/kuliner/kuliner_papiong.jpg',
                         ),
                         fit: BoxFit.cover,
                       ),
@@ -64,20 +84,21 @@ class Wisata extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "Pulau Kapoposang",
+                        "Papiong",
                         style: TextStyle(
                           fontSize: 40,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                      SizedBox(height: 10),
                       Container(
                         constraints: BoxConstraints(
                           maxWidth: MediaQuery.of(context).size.width * .45,
                         ),
                         child: Text(
-                          "Salah satu tempat wisata di Sulawesi Selatan yang memiliki pesona alam bawah laut yang menawan. Pulau yang merupakan salah satu dari gugusan kepulauan Spermonde ini memiliki gugusan terumbu karang yang sangat indah dengan menyimpan beranekaragam biota laut yang menarik.",
+                          "Pa'piong adalah masakan khas Toraja yang terdiri atas daun miana (Coleus blumei) dicampur dengan daging babi, ayam kampung atau ikan mas. Daging di dalamnya tercerai berai dan bercampur dengan parutan kelapa yang menguning karena bumbu.",
                           style: TextStyle(
-                            fontSize: 25,
+                            fontSize: 18,
                           ),
                         ),
                       ),
@@ -91,6 +112,14 @@ class Wisata extends StatelessWidget {
               margin: EdgeInsets.symmetric(vertical: 45),
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height * .7,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [Colors.white, Colors.white],
+                ),
+                borderRadius: BorderRadius.circular(15),
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -98,20 +127,21 @@ class Wisata extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "Rantepao",
+                        "Pallubasa",
                         style: TextStyle(
                           fontSize: 40,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                      SizedBox(height: 10),
                       Container(
                         constraints: BoxConstraints(
                           maxWidth: MediaQuery.of(context).size.width * .45,
                         ),
                         child: Text(
-                          "Rantepao sendiri menjadi pintu gerbang untuk menjelajahi kawasan Toraja yang memukau, dengan lembah-lembah hijau, sawah terasering, dan pegunungan yang indah.",
+                          "Pallu basa adalah makanan tradisional Suku Makassar, Sulawesi Selatan. Seperti Coto Mangkasara (Coto Makassar), Pallu basa juga terbuat dari jeroan (isi dalam perut) sapi atau kerbau. Proses memasaknya pun hampir sama dengan Coto Makassar, yaitu direbus dalam waktu lama. Setelah matang, jeroan yang ditambah dengan daging itu diiris-iris, kemudian ditaruh/dihidangkan dalam mangkuk.",
                           style: TextStyle(
-                            fontSize: 25,
+                            fontSize: 18,
                           ),
                         ),
                       )
@@ -124,7 +154,7 @@ class Wisata extends StatelessWidget {
                       borderRadius: BorderRadius.circular(25),
                       image: DecorationImage(
                         image: AssetImage(
-                          'lib/assets/image/wisata/wisata_rantepao.jpg',
+                          'lib/assets/image/kuliner/kuliner_pallubasa.jpg',
                         ),
                         fit: BoxFit.cover,
                       ),
@@ -138,6 +168,14 @@ class Wisata extends StatelessWidget {
               margin: EdgeInsets.symmetric(vertical: 45),
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height * .7,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [Colors.white, Colors.white],
+                ),
+                borderRadius: BorderRadius.circular(15),
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -148,7 +186,7 @@ class Wisata extends StatelessWidget {
                       borderRadius: BorderRadius.circular(25),
                       image: DecorationImage(
                         image: AssetImage(
-                          'lib/assets/image/wisata/Taman_Bantimurung.jpg',
+                          'lib/assets/image/kuliner/pisang_epe.jpeg',
                         ),
                         fit: BoxFit.cover,
                       ),
@@ -158,20 +196,21 @@ class Wisata extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "Taman Nasional Bantimurung",
+                        "Pisang Epe",
                         style: TextStyle(
                           fontSize: 40,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                      SizedBox(height: 10),
                       Container(
                         constraints: BoxConstraints(
                           maxWidth: MediaQuery.of(context).size.width * .45,
                         ),
                         child: Text(
-                          "Taman nasional yang terletak di kabupaten Maros atau kurang lebih 45 km dari pusat kota Makassar ini sangat terkenal sebagai kerajaan kupu-kupu. Terdapat sekitar 250 jenis kupu-kupu yang ada di sana sehingga kupu-kupu dijadikan maskot Taman Nasional Batimurung ini. Sehingga anda tidak hanya akan disajikan dengan panorama keindahan alam yang menawan akan tetapi juga akan menambah pengetahuan anda.",
+                          "Pisang epe adalah salah satu makanan khas Sulawesi Selatan yang saat ini hanya bisa ditemui di Makassar atau tepatnya di kawasan Pantai Losari. Kuliner yang satu ini cukup populer bagi masyarakat karena penyajiannya yang terbilang unik.",
                           style: TextStyle(
-                            fontSize: 25,
+                            fontSize: 18,
                           ),
                         ),
                       ),

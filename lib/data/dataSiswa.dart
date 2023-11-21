@@ -16,7 +16,7 @@ class dataSiswa{
       "image" : "lib/assets/image/profile/shinta.jpg",
       "absen" : 29
     }, {
-      "nama" : "Rizkia Khosy Amalia W",
+      "nama" : "Rizkia Khosy Amalia W.",
       "jobdesk" : "",
       "image" : "lib/assets/image/profile/kia.jpg",
       "absen" : 30
