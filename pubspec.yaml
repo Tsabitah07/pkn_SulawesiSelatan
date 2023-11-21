@@ -92,6 +92,12 @@ flutter:
     - lib/assets/logo/fish.png
     - lib/assets/logo/leaf.png
     - lib/assets/logo/wave.png
+    - lib/assets/image/wisata/wisata_rantepao.jpg
+    - lib/assets/image/wisata/pulau_kapoposang.jpg
+    - lib/assets/image/wisata/Taman_Bantimurung.jpg
+    - lib/assets/image/wisata/Wisata_Sulsel.jpg
+    - 
+    
 
 
 
