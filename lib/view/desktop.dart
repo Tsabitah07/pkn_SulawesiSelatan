@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sulsel_web/controller/homeController.dart';
+import 'package:sulsel_web/detailPage/Sosbud/sosbud.dart';
 import 'package:sulsel_web/widget/appBarPhone.dart';
 
+import '../detailPage/ekonomi/ekonomiResponsive.dart';
 import '../widget/appbar.dart';
 
 class DesktopHomePage extends StatelessWidget {
@@ -81,7 +83,7 @@ class DesktopHomePage extends StatelessWidget {
                                     ),
                                   ),
                                   Text(
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                                      "Sulawesi Selatan (disingkat Sulsel, Lontara) adalah sebuah provinsi di semenanjung selatan Sulawesi. Kepulauan Selayar di selatan Sulawesi juga merupakan bagian dari provinsi tersebut. Ibu kota provinsi ini berada di Kota Makassar. Provinsi ini berbatasan dengan Sulawesi Tengah dan Sulawesi Barat di utara, Teluk Bone dan Sulawesi Tenggara di timur, Selat Makassar di barat, dan Laut Flores di selatan.",
                                     style: TextStyle(
                                         color: Colors.white, fontSize: 14),
                                     textAlign: TextAlign.justify,
@@ -134,8 +136,16 @@ class DesktopHomePage extends StatelessWidget {
                                   ],
                                 ),
                                 Container(
+                                  constraints: BoxConstraints(
+                                      maxHeight:
+                                      MediaQuery.of(context).size.height * .35,
+                                      maxWidth:
+                                      MediaQuery.of(context).size.width * .35),
                                   margin: EdgeInsets.only(top: 29),
-                                  child: Text("Gubernur Sulawesi Selatan"),
+                                  child: Text(
+                                      "Dr. Bahtiar Baharuddin, M.Si. (lahir 16 Januari 1973) adalah birokrat Indonesia asal Bone, Sulawesi Selatan. Bahtiar adalah seorang pejabat madya atau pejabat eselon I di Kementrian Dalam Negeri (Kemendagri), sebelumnya menjabat sebagai Kepala Pusat Penerangan (Kapuspen) Kemendagri, Dirjen Politik dan Pemerintahan Umum Kemendagri, dan pada tanggal 5 September 2023 diangkat menjadi Penjabat Gubernur Sulawesi Selatan.",
+                                    textAlign: TextAlign.justify,
+                                  ),
                                 )
                               ],
                             ),
@@ -175,9 +185,17 @@ class DesktopHomePage extends StatelessWidget {
                                   ],
                                 ),
                                 Container(
+                                  constraints: BoxConstraints(
+                                      maxHeight:
+                                      MediaQuery.of(context).size.height * .35,
+                                      maxWidth:
+                                      MediaQuery.of(context).size.width * .35),
                                   margin: EdgeInsets.only(top: 29),
                                   child:
-                                      Text("Wakil Gubernur Sulawesi Selatan"),
+                                  Text(
+                                    "Sudirman Sulaiman lahir dan menghabiskan masa remajanya di Dusun Bakunge, Desa Mappesangka, Kec. Ponre, Kabupaten Bone. Ia lahir pada 25 September 1983. Andi Sudirman merupakan anak ke-11 dari 12 bersaudara. Ayahnya adalah anggota TNI sekaligus seorang petani, sedangkan ibunya adalah seorang ibu rumah tangga (IRT).",
+                                    textAlign: TextAlign.justify,
+                                  ),
                                 )
                               ],
                             )
@@ -218,14 +236,12 @@ class DesktopHomePage extends StatelessWidget {
                                   padding: EdgeInsets.all(23),
                                   child: Column(
                                       mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
+                                          MainAxisAlignment.center,
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
-                                        Text("data"),
-                                        ElevatedButton(
-                                            onPressed: () {},
-                                            child: Text("See detail"))
+                                        Text(
+                                          "Sulawesi Selatan adalah salah satu provinsi di Indonesia yang kaya akan sejarah dan budaya yang mendalam. Wilayah ini memiliki catatan sejarah panjang yang telah berlangsung selama ribuan tahun. Pada abad ke-13, kerajaan-kerajaan seperti Gowa dan Makassar berkembang di wilayah ini, dan mereka memiliki pengaruh yang kuat di wilayah perdagangan dan maritim di sekitarnya. Selama masa kolonialisme, Sulawesi Selatan menjadi bagian dari Hindia Belanda, dan perlawanan terhadap penjajah Belanda di wilayah ini, terutama dari kerajaan-kerajaan di Sulawesi Selatan, menjadi bagian penting dalam perjuangan kemerdekaan Indonesia."),
                                       ]),
                                 ),
                               ],
@@ -250,7 +266,7 @@ class DesktopHomePage extends StatelessWidget {
                                           MediaQuery.of(context).size.width *
                                               0.7),
                                   child: Text(
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                    'Provinsi Sulawesi Selatan, fokus transaksi ekonomi adalah domestik, yang mencakup kegiatan ekonomi di wilayah provinsi ini. Contoh transaksi ekonomi domestik di Provinsi Sulawesi Selatan melibatkan pembelian barang dan jasa oleh masyarakat setempat dari produsen atau pedagang lokal, penjualan barang dan jasa oleh produsen atau pedagang kepada masyarakat setempat, pembayaran upah atau gaji kepada tenaga kerja dari wilayah tersebut, dan pembayaran pajak kepada pemerintah provinsi.',
                                     textAlign: TextAlign.center,
                                   )),
                               Container(
@@ -369,15 +385,18 @@ class DesktopHomePage extends StatelessWidget {
                                   ],
                                 ),
                               ),
-                              Container(
-                                margin: EdgeInsets.all(13),
-                                decoration: BoxDecoration(
-                                  color: Colors.lightBlueAccent,
-                                  borderRadius: BorderRadius.circular(21),
-                                ),
-                                child: ElevatedButton(
-                                  onPressed: () {},
-                                  child: Text("See Details"),
+                              InkWell(
+                                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => EkonomiResponsive())),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(15),
+                                    color: Color.fromRGBO(196, 193, 164, 1),
+                                  ),
+                                  margin: EdgeInsets.symmetric(vertical: 5),
+                                  width: MediaQuery.of(context).size.width * .2,
+                                  height: 35,
+                                  child: Center(child: Text("See Detail"),
+                                  ),
                                 ),
                               )
                             ],
@@ -396,8 +415,15 @@ class DesktopHomePage extends StatelessWidget {
                               style: TextStyle(fontSize: 29),
                             )),
                         Container(
-                            margin: EdgeInsets.only(bottom: 9),
-                            child: Text("data")),
+                            constraints: BoxConstraints(
+                                maxWidth:
+                                MediaQuery.of(context).size.width *
+                                    0.7),
+                            margin: EdgeInsets.only(bottom: 20),
+                            child: Text(
+                              "Kesenian di Sulawesi Selatan diakui sebagai kebudayaan tinggi yang memiliki dampak besar terhadap lingkungan dan psikologis, karena seni tidak hanya mencakup aspek kehidupan, melainkan juga memberikan kontribusi penting.",
+                              textAlign: TextAlign.center,
+                            )),
                         Column(
                           children: [
                             Row(
@@ -456,6 +482,20 @@ class DesktopHomePage extends StatelessWidget {
                                 ),
                               ],
                             ),
+                            InkWell(
+                              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => SosialBudayaResponsive())),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(15),
+                                  color: Color.fromRGBO(196, 193, 164, 1),
+                                ),
+                                margin: EdgeInsets.symmetric(vertical: 20),
+                                width: MediaQuery.of(context).size.width * .2,
+                                height: 35,
+                                child: Center(child: Text("See Detail"),
+                                ),
+                              ),
+                            )
                           ],
                         )
                       ])),
@@ -736,12 +776,26 @@ class DesktopHomePage extends StatelessWidget {
                               ],
                             ),
                         ),
+                        InkWell(
+                          onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => EkonomiResponsive())),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              color: Color.fromRGBO(196, 193, 164, 1),
+                            ),
+                            margin: EdgeInsets.symmetric(vertical: 25),
+                            width: MediaQuery.of(context).size.width * .2,
+                            height: 35,
+                            child: Center(child: Text("See Detail"),
+                            ),
+                          ),
+                        )
                       ]),
                   ),
                 ],
               ),
             ),
-            AppBarWidget()
+            AppBarWidget(color: Color.fromRGBO(196, 193, 164, 1),)
           ],
         ),
       ),

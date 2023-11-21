@@ -4,6 +4,8 @@ import 'package:flutter_flip_card/controllers/flip_card_controllers.dart';
 import 'package:flutter_flip_card/flipcard/flip_card.dart';
 import 'package:flutter_flip_card/modal/flip_side.dart';
 import 'package:get/get.dart';
+import 'package:sulsel_web/detailPage/Sosbud/sosbud.dart';
+import 'package:sulsel_web/detailPage/ekonomi/ekonomiResponsive.dart';
 
 import '../controller/homeController.dart';
 import '../widget/appBarPhone.dart';
@@ -61,7 +63,7 @@ class PhoneHomePage extends StatelessWidget {
                               fontWeight: FontWeight.bold),
                         ),
                         Text(
-                          "data",
+                          "Selamat Datang di Website Sulawesi Selatan",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 14,
@@ -105,7 +107,7 @@ class PhoneHomePage extends StatelessWidget {
                                       style: TextStyle(
                                           fontSize: 17, fontWeight: FontWeight.bold),
                                     ),
-                                    Text("Andi Sudirman Sulaiman",
+                                    Text("Bahtiar Baharuddin",
                                       style: TextStyle(
                                           fontSize: 21, fontWeight: FontWeight.bold),
                                     ),
@@ -170,7 +172,14 @@ class PhoneHomePage extends StatelessWidget {
                   expandedColor: Color.fromRGBO(196, 193, 164, 1),
                   title: const Text('Histori'),
                   subtitle: const Text('Tap to see detail!'),
-                  children: [Text("data")]),
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(15),
+                      child: Text(
+                      "Sulawesi Selatan adalah salah satu provinsi di Indonesia yang kaya akan sejarah dan budaya yang mendalam. Wilayah ini memiliki catatan sejarah panjang yang telah berlangsung selama ribuan tahun. Pada abad ke-13, kerajaan-kerajaan seperti Gowa dan Makassar berkembang di wilayah ini, dan mereka memiliki pengaruh yang kuat di wilayah perdagangan dan maritim di sekitarnya. Selama masa kolonialisme, Sulawesi Selatan menjadi bagian dari Hindia Belanda, dan perlawanan terhadap penjajah Belanda di wilayah ini, terutama dari kerajaan-kerajaan di Sulawesi Selatan, menjadi bagian penting dalam perjuangan kemerdekaan Indonesia. Setelah kemerdekaan Indonesia pada tahun 1945, Sulawesi Selatan terus berkembang dan menjadi pusat ekonomi, politik, dan budaya di bagian timur Indonesia, dengan Makassar sebagai ibu kota provinsi. \\ Selain sejarahnya yang kaya, Sulawesi Selatan juga dikenal karena keanekaragaman budayanya. Banyak suku dan etnis berbeda tinggal di sini, seperti suku Bugis, Makassar, Toraja, dan banyak lagi, masing-masing dengan tradisi dan bahasa mereka sendiri. Perayaan-perayaan adat, seperti Toraja's Rambu Solo, adalah bagian integral dari budaya Sulawesi Selatan. Provinsi ini juga dikenal dengan keindahan alamnya, termasuk pantai-pantai yang memukau, pegunungan yang menjulang tinggi, dan danau-danau yang indah. Sulawesi Selatan terus berkembang menjadi destinasi pariwisata yang menarik bagi wisatawan yang ingin menjelajahi sejarah dan keindahan alam Indonesia yang beragam.",
+                      textAlign: TextAlign.justify,
+                  ),
+                    )]),
             ),
             Container(
                 padding: EdgeInsets.all(20),
@@ -221,7 +230,7 @@ class PhoneHomePage extends StatelessWidget {
                           ],
                         )),
                     InkWell(
-                        onTap: () {},
+                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => EkonomiResponsive())),
                         child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
@@ -297,11 +306,11 @@ class PhoneHomePage extends StatelessWidget {
                       ]),
                     ),
                     InkWell(
-                        onTap: () {},
+                        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => SosialBudayaResponsive())),
                         child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
-                              color: Color.fromRGBO(255,  198, 172, 1),
+                              color: Color.fromRGBO(196, 193, 164, 1),
                             ),
                             margin: EdgeInsets.symmetric(vertical: 15),
                             width: screenWidth * .3,

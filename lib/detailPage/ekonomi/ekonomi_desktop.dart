@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sulsel_web/detailPage/ekonomi/components/pendapatan_ekonomi_component.dart';
+import 'package:sulsel_web/widget/appbar.dart';
 
 class EkonomiDesktopPage extends StatelessWidget {
   const EkonomiDesktopPage({super.key});
@@ -10,6 +11,7 @@ class EkonomiDesktopPage extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
           child: Column(children: [
+            AppBarWidget(color: Color.fromRGBO(255,  198, 172, 1),),
         Text(
           'ASPEK EKONOMI',
           style: GoogleFonts.poppins(fontWeight: FontWeight.bold, fontSize: 36),

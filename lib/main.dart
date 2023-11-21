@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sulsel_web/detailPage/Sosbud/sosbud.dart';
+import 'package:sulsel_web/detailPage/ekonomi/ekonomiResponsive.dart';
 import 'package:sulsel_web/detailPage/ekonomi/ekonomi_desktop.dart';
 import 'package:sulsel_web/detailPage/ekonomi/ekonomi_phone.dart';
 import 'package:sulsel_web/detailPage/hp/hpsosbud.dart';
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SosBud(),
+      home: HomePage(),
     );
   }
 }

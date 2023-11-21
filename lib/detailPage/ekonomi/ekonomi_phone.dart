@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sulsel_web/widget/appBarPhone.dart';
 
 class EkonomiPhonePage extends StatelessWidget {
   const EkonomiPhonePage({super.key});
@@ -7,16 +8,18 @@ class EkonomiPhonePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: PhoneAppBar(width: MediaQuery.of(context).size.width, height: MediaQuery.of(context).size.height),
+      appBar: AppBar(
+        backgroundColor: Color.fromRGBO(255,  246, 220, 1),
+        title: Text(
+          'ASPEK EKONOMI',
+          // style: GoogleFonts.poppins(
+          //     fontWeight: FontWeight.bold, fontSize: 36),
+        ),
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Text(
-              'ASPEK EKONOMI',
-              style: GoogleFonts.poppins(
-                  fontWeight: FontWeight.bold, fontSize: 36),
-            ),
-            Text('tunggu versi phone inas',
-                style: TextStyle(color: Colors.red)),
             Container(
               padding: EdgeInsets.symmetric(
                   horizontal: MediaQuery.of(context).size.width * 0.06),

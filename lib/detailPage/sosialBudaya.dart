@@ -27,7 +27,7 @@ class SosBud extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 30),
         child: ListView(
           children: [
-            AppBarWidget(),
+            AppBarWidget(color: Color.fromRGBO(255,  198, 172, 1),),
             SizedBox(height: 30),
             Container(
               color: Color(0xFFFFC6AC),

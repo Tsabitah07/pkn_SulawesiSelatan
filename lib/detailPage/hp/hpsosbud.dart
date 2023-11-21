@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_options.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sulsel_web/widget/appBarPhone.dart';
 
 class SosialBudayaHp extends StatelessWidget {
   const SosialBudayaHp({super.key});
@@ -11,14 +12,20 @@ class SosialBudayaHp extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
     double screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
+      drawer: PhoneAppBar(width: screenWidth, height: screenHeight,),
+      appBar: AppBar(
+        backgroundColor: Color.fromRGBO(255,  246, 220, 1),
+        title: Text("Cultural of Sulawesi Selatan",
+          // style: GoogleFonts.poppins(fontSize: 25, fontWeight: FontWeight.bold,
+          // color: Colors.black,),
+        ),
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding:  EdgeInsets.symmetric(horizontal: 15),
           child: Center(
             child: Column(
               children: [
-                Text("Cultural of Sulawesi Selatan", style: GoogleFonts.poppins(fontSize: 25, fontWeight: FontWeight.bold,
-                  color: Colors.black,),),
                 SizedBox(height: screenHeight *0.03,),
                 Container(
                   child: Padding(
