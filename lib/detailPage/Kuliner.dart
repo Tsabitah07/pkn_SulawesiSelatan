@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:sulsel_web/detailPage/DesktopWisata.dart';
-import 'package:sulsel_web/detailPage/PhoneWisata.dart';
+import 'package:sulsel_web/detailPage/kulinerDesktop.dart';
+import 'package:sulsel_web/detailPage/kulinerPhone.dart';
 
-class WisataResponsive extends StatelessWidget {
-  const WisataResponsive({super.key});
+class KulinerResponsive extends StatelessWidget {
+  const KulinerResponsive({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,9 +11,9 @@ class WisataResponsive extends StatelessWidget {
       body: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constraints) {
             if (constraints.maxWidth < 700) {
-              return PhoneWisata();
+              return PhoneKuliner();
             } else {
-              return DesktopWisata();
+              return DesktopKuliner();
             }
           }
       ),

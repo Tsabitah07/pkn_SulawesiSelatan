@@ -4,10 +4,12 @@ import 'package:flutter_flip_card/controllers/flip_card_controllers.dart';
 import 'package:flutter_flip_card/flipcard/flip_card.dart';
 import 'package:flutter_flip_card/modal/flip_side.dart';
 import 'package:get/get.dart';
+import 'package:sulsel_web/detailPage/Kuliner.dart';
 import 'package:sulsel_web/detailPage/Sosbud/sosbud.dart';
 import 'package:sulsel_web/detailPage/ekonomi/ekonomiResponsive.dart';
 
 import '../controller/homeController.dart';
+import '../detailPage/wisata.dart';
 import '../widget/appBarPhone.dart';
 
 class PhoneHomePage extends StatelessWidget {
@@ -230,7 +232,7 @@ class PhoneHomePage extends StatelessWidget {
                           ],
                         )),
                     InkWell(
-                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => EkonomiResponsive())),
+                      onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => EkonomiResponsive())),
                         child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
@@ -306,7 +308,7 @@ class PhoneHomePage extends StatelessWidget {
                       ]),
                     ),
                     InkWell(
-                        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => SosialBudayaResponsive())),
+                        onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => SosialBudayaResponsive())),
                         child: Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
@@ -338,33 +340,36 @@ class PhoneHomePage extends StatelessWidget {
                           fit: BoxFit.cover
                       )
                     ),
-                      child: Stack(
-                          children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20),
-                                color: Colors.black.withOpacity(.3),
+                      child: InkWell(
+                        onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => WisataResponsive())),
+                        child: Stack(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20),
+                                  color: Colors.black.withOpacity(.3),
+                                ),
                               ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(15),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Text("Wisata",
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 20,
+                              Padding(
+                                padding: const EdgeInsets.all(15),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Text("Wisata",
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 20,
+                                      ),
                                     ),
-                                  ),
-                                ],
-                              ),
-                            )
-                          ],
+                                  ],
+                                ),
+                              )
+                            ],
+                        ),
                       ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(top: 10),
+                    margin: EdgeInsets.only(top: 10, bottom: 20),
                     width: screenWidth * .8,
                     height: screenHeight * .14,
                     decoration: BoxDecoration(
@@ -374,45 +379,34 @@ class PhoneHomePage extends StatelessWidget {
                             fit: BoxFit.cover
                         )
                     ),
-                    child: Stack(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: Colors.black.withOpacity(.3),
+                    child: InkWell(
+                      onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => KulinerResponsive())),
+                      child: Stack(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.black.withOpacity(.3),
+                            ),
                           ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(15),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Text("Kuliner",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
+                          Padding(
+                            padding: const EdgeInsets.all(15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text("Kuliner",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                        )
-                      ],
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
-                  InkWell(
-                    onTap: () {},
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Color.fromRGBO(196, 193, 164, 1),
-                      ),
-                      margin: EdgeInsets.symmetric(vertical: 15),
-                      width: screenWidth * .3,
-                      height: 35,
-                      child: Center(child: Text("See Detail"),
-                      ),
-                    ),
-                  )
                 ],
               )
             )

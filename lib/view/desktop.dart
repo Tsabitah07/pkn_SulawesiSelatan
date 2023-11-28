@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sulsel_web/controller/homeController.dart';
 import 'package:sulsel_web/detailPage/Sosbud/sosbud.dart';
-import 'package:sulsel_web/widget/appBarPhone.dart';
+import 'package:sulsel_web/detailPage/kulinerDesktop.dart';
+import 'package:sulsel_web/detailPage/DesktopWisata.dart';
 
 import '../detailPage/ekonomi/ekonomiResponsive.dart';
 import '../widget/appbar.dart';
@@ -241,7 +242,10 @@ class DesktopHomePage extends StatelessWidget {
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          "Sulawesi Selatan adalah salah satu provinsi di Indonesia yang kaya akan sejarah dan budaya yang mendalam. Wilayah ini memiliki catatan sejarah panjang yang telah berlangsung selama ribuan tahun. Pada abad ke-13, kerajaan-kerajaan seperti Gowa dan Makassar berkembang di wilayah ini, dan mereka memiliki pengaruh yang kuat di wilayah perdagangan dan maritim di sekitarnya. Selama masa kolonialisme, Sulawesi Selatan menjadi bagian dari Hindia Belanda, dan perlawanan terhadap penjajah Belanda di wilayah ini, terutama dari kerajaan-kerajaan di Sulawesi Selatan, menjadi bagian penting dalam perjuangan kemerdekaan Indonesia."),
+                                          "Sulawesi Selatan adalah salah satu provinsi di Indonesia yang kaya akan sejarah dan budaya yang mendalam. Wilayah ini memiliki catatan sejarah panjang yang telah berlangsung selama ribuan tahun. Pada abad ke-13, kerajaan-kerajaan seperti Gowa dan Makassar berkembang di wilayah ini, dan mereka memiliki pengaruh yang kuat di wilayah perdagangan dan maritim di sekitarnya. Selama masa kolonialisme, Sulawesi Selatan menjadi bagian dari Hindia Belanda, dan perlawanan terhadap penjajah Belanda di wilayah ini, terutama dari kerajaan-kerajaan di Sulawesi Selatan, menjadi bagian penting dalam perjuangan kemerdekaan Indonesia.",
+                                          overflow: TextOverflow.fade,
+                                          maxLines: 11,
+                                        ),
                                       ]),
                                 ),
                               ],
@@ -509,7 +513,9 @@ class DesktopHomePage extends StatelessWidget {
                             style: TextStyle(fontSize: 29),
                           ),
                         ),
-                        Text("data"),
+                        Text(
+                          'Temukan cita rasa terbaik dari setiap sudut Sulawesi Selatan.',
+                        ),
                         Container(
                             margin: EdgeInsets.only(
                                 left: MediaQuery.of(context).size.width * .05,
@@ -543,30 +549,33 @@ class DesktopHomePage extends StatelessWidget {
                                               fit: BoxFit.cover
                                           ),
                                       ),
-                                      child: Stack(
-                                        children: [
-                                          Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.black.withOpacity(.24),
-                                                borderRadius: BorderRadius.all(
-                                                    Radius.circular(23),
-                                                ),
+                                      child: InkWell(
+                                        onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => DesktopWisata())),
+                                        child: Stack(
+                                          children: [
+                                            Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.black.withOpacity(.24),
+                                                  borderRadius: BorderRadius.all(
+                                                      Radius.circular(23),
+                                                  ),
+                                                )
+                                            ),
+                                            Align(
+                                              alignment: Alignment.bottomLeft,
+                                              child: Container(
+                                                padding: EdgeInsets.all(9),
+                                                  child: Text("Taman Nasional Wakatobi",
+                                                      style: TextStyle(
+                                                          color: Colors.white,
+                                                        fontSize: 17,
+                                                        fontWeight: FontWeight.w700
+                                                      ),
+                                                  ),
                                               )
-                                          ),
-                                          Align(
-                                            alignment: Alignment.bottomLeft,
-                                            child: Container(
-                                              padding: EdgeInsets.all(9),
-                                                child: Text("Taman Nasional Wakatobi",
-                                                    style: TextStyle(
-                                                        color: Colors.white,
-                                                      fontSize: 17,
-                                                      fontWeight: FontWeight.w700
-                                                    ),
-                                                ),
                                             )
-                                          )
-                                        ],
+                                          ],
+                                        ),
                                       )
                                     ),
                                 ),
@@ -593,30 +602,33 @@ class DesktopHomePage extends StatelessWidget {
                                             fit: BoxFit.cover
                                         ),
                                       ),
-                                      child: Stack(
-                                        children: [
-                                          Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.black.withOpacity(.24),
-                                                borderRadius: BorderRadius.all(
-                                                  Radius.circular(23),
-                                                ),
-                                              )
-                                          ),
-                                          Align(
-                                              alignment: Alignment.bottomLeft,
-                                              child: Container(
-                                                padding: EdgeInsets.all(9),
-                                                child: Text("Papiong",
-                                                  style: TextStyle(
-                                                      color: Colors.white,
-                                                      fontSize: 17,
-                                                      fontWeight: FontWeight.w700
+                                      child: InkWell(
+                                        onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => DesktopKuliner())),
+                                        child: Stack(
+                                          children: [
+                                            Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.black.withOpacity(.24),
+                                                  borderRadius: BorderRadius.all(
+                                                    Radius.circular(23),
                                                   ),
-                                                ),
-                                              )
-                                          )
-                                        ],
+                                                )
+                                            ),
+                                            Align(
+                                                alignment: Alignment.bottomLeft,
+                                                child: Container(
+                                                  padding: EdgeInsets.all(9),
+                                                  child: Text("Papiong",
+                                                    style: TextStyle(
+                                                        color: Colors.white,
+                                                        fontSize: 17,
+                                                        fontWeight: FontWeight.w700
+                                                    ),
+                                                  ),
+                                                )
+                                            )
+                                          ],
+                                        ),
                                       )
                                   ),
                                 ),
@@ -643,30 +655,33 @@ class DesktopHomePage extends StatelessWidget {
                                             fit: BoxFit.cover
                                         ),
                                       ),
-                                      child: Stack(
-                                        children: [
-                                          Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.black.withOpacity(.24),
-                                                borderRadius: BorderRadius.all(
-                                                  Radius.circular(23),
-                                                ),
-                                              )
-                                          ),
-                                          Align(
-                                              alignment: Alignment.bottomLeft,
-                                              child: Container(
-                                                padding: EdgeInsets.all(9),
-                                                child: Text("Pulau Selayar",
-                                                  style: TextStyle(
-                                                      color: Colors.white,
-                                                      fontSize: 17,
-                                                      fontWeight: FontWeight.w700
+                                      child: InkWell(
+                                        onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => DesktopWisata())),
+                                        child: Stack(
+                                          children: [
+                                            Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.black.withOpacity(.24),
+                                                  borderRadius: BorderRadius.all(
+                                                    Radius.circular(23),
                                                   ),
-                                                ),
-                                              )
-                                          )
-                                        ],
+                                                )
+                                            ),
+                                            Align(
+                                                alignment: Alignment.bottomLeft,
+                                                child: Container(
+                                                  padding: EdgeInsets.all(9),
+                                                  child: Text("Pulau Selayar",
+                                                    style: TextStyle(
+                                                        color: Colors.white,
+                                                        fontSize: 17,
+                                                        fontWeight: FontWeight.w700
+                                                    ),
+                                                  ),
+                                                )
+                                            )
+                                          ],
+                                        ),
                                       )
                                   ),
                                 ),
@@ -693,30 +708,33 @@ class DesktopHomePage extends StatelessWidget {
                                             fit: BoxFit.cover
                                         ),
                                       ),
-                                      child: Stack(
-                                        children: [
-                                          Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.black.withOpacity(.24),
-                                                borderRadius: BorderRadius.all(
-                                                  Radius.circular(23),
-                                                ),
-                                              )
-                                          ),
-                                          Align(
-                                              alignment: Alignment.bottomLeft,
-                                              child: Container(
-                                                padding: EdgeInsets.all(9),
-                                                child: Text("Pallubasa",
-                                                  style: TextStyle(
-                                                      color: Colors.white,
-                                                      fontSize: 17,
-                                                      fontWeight: FontWeight.w700
+                                      child: InkWell(
+                                        onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => DesktopKuliner())),
+                                        child: Stack(
+                                          children: [
+                                            Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.black.withOpacity(.24),
+                                                  borderRadius: BorderRadius.all(
+                                                    Radius.circular(23),
                                                   ),
-                                                ),
-                                              )
-                                          )
-                                        ],
+                                                )
+                                            ),
+                                            Align(
+                                                alignment: Alignment.bottomLeft,
+                                                child: Container(
+                                                  padding: EdgeInsets.all(9),
+                                                  child: Text("Pallubasa",
+                                                    style: TextStyle(
+                                                        color: Colors.white,
+                                                        fontSize: 17,
+                                                        fontWeight: FontWeight.w700
+                                                    ),
+                                                  ),
+                                                )
+                                            )
+                                          ],
+                                        ),
                                       )
                                   ),
                                 ),
@@ -743,53 +761,42 @@ class DesktopHomePage extends StatelessWidget {
                                             fit: BoxFit.cover
                                         ),
                                       ),
-                                      child: Stack(
-                                        children: [
-                                          Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.black.withOpacity(.24),
-                                                borderRadius: BorderRadius.all(
-                                                  Radius.circular(23),
-                                                ),
-                                              )
-                                          ),
-                                          Align(
-                                              alignment: Alignment.bottomLeft,
-                                              child: Container(
-                                                padding: EdgeInsets.all(9),
-                                                child: Text("Rantepao",
-                                                  style: TextStyle(
-                                                      fontSize: 17,
-                                                      fontWeight: FontWeight.w700,
-                                                    foreground: Paint()
-                                                      ..style = PaintingStyle.stroke
-                                                      ..strokeWidth = 2.0  // Adjust the border thickness
-                                                      ..color = Colors.black,
+                                      child: InkWell(
+                                        onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => DesktopWisata())),
+                                        child: Stack(
+                                          children: [
+                                            Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.black.withOpacity(.24),
+                                                  borderRadius: BorderRadius.all(
+                                                    Radius.circular(23),
                                                   ),
-                                                ),
-                                              )
-                                          )
-                                        ],
+                                                )
+                                            ),
+                                            Align(
+                                                alignment: Alignment.bottomLeft,
+                                                child: Container(
+                                                  padding: EdgeInsets.all(9),
+                                                  child: Text("Rantepao",
+                                                    style: TextStyle(
+                                                        fontSize: 17,
+                                                        fontWeight: FontWeight.w700,
+                                                      foreground: Paint()
+                                                        ..style = PaintingStyle.stroke
+                                                        ..strokeWidth = 2.0  // Adjust the border thickness
+                                                        ..color = Colors.black,
+                                                    ),
+                                                  ),
+                                                )
+                                            )
+                                          ],
+                                        ),
                                       )
                                   ),
                                 ),
                               ],
                             ),
                         ),
-                        InkWell(
-                          onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => EkonomiResponsive())),
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(15),
-                              color: Color.fromRGBO(196, 193, 164, 1),
-                            ),
-                            margin: EdgeInsets.symmetric(vertical: 25),
-                            width: MediaQuery.of(context).size.width * .2,
-                            height: 35,
-                            child: Center(child: Text("See Detail"),
-                            ),
-                          ),
-                        )
                       ]),
                   ),
                 ],

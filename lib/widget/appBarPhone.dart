@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sulsel_web/detailPage/Kuliner.dart';
 import 'package:sulsel_web/detailPage/Sosbud/sosbud.dart';
 import 'package:sulsel_web/detailPage/ekonomi/ekonomiResponsive.dart';
+import 'package:sulsel_web/detailPage/kulinerDesktop.dart';
+import 'package:sulsel_web/detailPage/DesktopWisata.dart';
+import 'package:sulsel_web/detailPage/wisata.dart';
 import 'package:sulsel_web/homePage.dart';
 
 class PhoneAppBar extends StatelessWidget {
@@ -70,12 +74,27 @@ class PhoneAppBar extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            margin: EdgeInsets.only(top: 25, left: 15),
-            child: Text("Wisata & Kuliner",
-              style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600
+          InkWell(
+            onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => WisataResponsive())),
+            child: Container(
+              margin: EdgeInsets.only(top: 25, left: 15),
+              child: Text("Wisata",
+                style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600
+                ),
+              ),
+            ),
+          ),
+          InkWell(
+            onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => KulinerResponsive())),
+            child: Container(
+              margin: EdgeInsets.only(top: 25, left: 15),
+              child: Text("Kuliner",
+                style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600
+                ),
               ),
             ),
           ),

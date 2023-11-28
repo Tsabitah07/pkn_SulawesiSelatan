@@ -12,7 +12,7 @@ class DesktopKuliner extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            AppBarWidget(),
+            AppBarWidget(color: Color.fromRGBO(196, 193, 164, 1)),
             Container(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height * 0.5,

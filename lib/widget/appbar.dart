@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sulsel_web/detailPage/Kuliner.dart';
 import 'package:sulsel_web/detailPage/Sosbud/sosbud.dart';
 import 'package:sulsel_web/detailPage/ekonomi/ekonomiResponsive.dart';
+import 'package:sulsel_web/detailPage/kulinerDesktop.dart';
+import 'package:sulsel_web/detailPage/DesktopWisata.dart';
+import 'package:sulsel_web/detailPage/wisata.dart';
 
 import '../homePage.dart';
 
@@ -61,28 +65,28 @@ class AppBarWidget extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Container(
-                    margin: EdgeInsets.only(left: 9, right: 9),
-                    child: InkWell(
-                      onTap: () => Get.off(HomePage()),
+                  InkWell(
+                    onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => WisataResponsive())),
+                    child: Container(
+                      margin: EdgeInsets.only(left: 9, right: 9),
                       child: Text(
-                        "Wisata & Kuliner",
+                        "Wisata",
                         style: TextStyle(
                             color: Colors.white, fontSize: 21),
                       ),
                     ),
                   ),
-// Container(
-//   margin: EdgeInsets.only(left: 9, right: 9),
-//   child: InkWell(
-//     onTap: () {},
-//     child: Text(
-//       "Kuliner",
-//       style: TextStyle(
-//           color: Colors.white, fontSize: 21),
-//     ),
-//   ),
-// ),
+                  InkWell(
+                    onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => KulinerResponsive())),
+                    child: Container(
+                      margin: EdgeInsets.only(left: 9, right: 9),
+                      child: Text(
+                        "Kuliner",
+                        style: TextStyle(
+                            color: Colors.white, fontSize: 21),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),

@@ -149,6 +149,8 @@ class EkonomiPhonePage extends StatelessWidget {
                           'Produk Provinsi Sulawesi Selatan adalah semua barang dan jasa yang dihasilkan di wilayah Provinsi Sulawesi Selatan, baik oleh masyarakat (residen) Provinsi Sulawesi Selatan maupun masyarakat dari luar Provinsi Sulawesi Selatan. Dalam perhitungan produk Provinsi Sulawesi Selatan, tidak diperhatikan apakah faktor produksi yang digunakan berasal dari atau dimiliki oleh penduduk Provinsi Sulawesi Selatan. Hal ini karena faktor produksi dapat berpindah dari satu daerah ke daerah lain, baik secara fisik maupun secara non-fisik.',
                           style: GoogleFonts.poppins(
                               fontWeight: FontWeight.w500, fontSize: 14),
+                          overflow: TextOverflow.fade,
+                          maxLines: 7,
                         ),
                       ],
                     ),
