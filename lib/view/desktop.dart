@@ -34,7 +34,7 @@ class DesktopHomePage extends StatelessWidget {
                         ),
                         child: Container(
                           color: Colors.black
-                              .withOpacity(0.5), // Adjust opacity as needed
+                              .withOpacity(0.65), // Adjust opacity as needed
                         ),
                       ),
                       Container(
@@ -44,32 +44,32 @@ class DesktopHomePage extends StatelessWidget {
                           right: MediaQuery.of(context).size.width * 0.13,
                         ),
                         child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Column(
-                              children: [
-                                Image(
-                                  image: AssetImage(
-                                      "lib/assets/image/ibu_kota_sulsel.png"),
-                                  width:
-                                      MediaQuery.of(context).size.width * 0.39,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.all(7),
-                                  child: Text(
-                                    "Makassar, Ibu kota Sulawesi Selatan",
-                                    style: TextStyle(
-                                        color: Colors.white, fontSize: 17),
-                                  ),
-                                )
-                              ],
-                            ),
+                            // Column(
+                            //   children: [
+                            //     Image(
+                            //       image: AssetImage(
+                            //           "lib/assets/image/ibu_kota_sulsel.png"),
+                            //       width:
+                            //           MediaQuery.of(context).size.width * 0.39,
+                            //     ),
+                            //     Padding(
+                            //       padding: const EdgeInsets.all(7),
+                            //       child: Text(
+                            //         "Makassar, Ibu kota Sulawesi Selatan",
+                            //         style: TextStyle(
+                            //             color: Colors.white, fontSize: 17),
+                            //       ),
+                            //     )
+                            //   ],
+                            // ),
                             Container(
                               constraints: BoxConstraints(
                                   maxHeight:
                                       MediaQuery.of(context).size.height * .6,
                                   maxWidth:
-                                      MediaQuery.of(context).size.width * 0.3),
+                                      MediaQuery.of(context).size.width * 0.7),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment:
@@ -83,10 +83,11 @@ class DesktopHomePage extends StatelessWidget {
                                       fontWeight: FontWeight.w800,
                                     ),
                                   ),
+                                  SizedBox(height: 20,),
                                   Text(
                                       "Sulawesi Selatan (disingkat Sulsel, Lontara) adalah sebuah provinsi di semenanjung selatan Sulawesi. Kepulauan Selayar di selatan Sulawesi juga merupakan bagian dari provinsi tersebut. Ibu kota provinsi ini berada di Kota Makassar. Provinsi ini berbatasan dengan Sulawesi Tengah dan Sulawesi Barat di utara, Teluk Bone dan Sulawesi Tenggara di timur, Selat Makassar di barat, dan Laut Flores di selatan.",
                                     style: TextStyle(
-                                        color: Colors.white, fontSize: 14),
+                                        color: Colors.white, fontSize: 17),
                                     textAlign: TextAlign.justify,
                                   ),
                                 ],
@@ -802,7 +803,7 @@ class DesktopHomePage extends StatelessWidget {
                 ],
               ),
             ),
-            AppBarWidget(color: Color.fromRGBO(196, 193, 164, 1),)
+            AppBarWidget(color: Colors.transparent,)
           ],
         ),
       ),

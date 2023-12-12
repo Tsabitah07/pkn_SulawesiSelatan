@@ -32,19 +32,32 @@ class PhoneWisata extends StatelessWidget {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        "Wisata",
-                        style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold, color: Colors.white),
-                      ),
-                      Text(
-                        'Nikmati Keindahan Alam di Sulawesi Selatan',
-                        style: TextStyle(fontSize: 20, color: Colors.white),
-                        textAlign: TextAlign.center,
-                      ),
-                    ],
+                  child: Container(
+                    padding: EdgeInsets.symmetric(vertical: 20, horizontal: 25),
+                    decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.2),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.5),
+                          blurRadius: 10,
+                          offset: Offset(0, 5),
+                        ),
+                      ],
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Wisata",
+                          style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold, color: Colors.white),
+                        ),
+                        Text(
+                          'Nikmati Keindahan Alam di Sulawesi Selatan',
+                          style: TextStyle(fontSize: 20, color: Colors.white),
+                          textAlign: TextAlign.center,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],
