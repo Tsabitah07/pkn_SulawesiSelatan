@@ -109,7 +109,8 @@ class EkonomiPhonePage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Image.asset('lib/assets/image/ekonomi/ekonomi_pajak.jpg')
+                  Image.asset('lib/assets/image/ekonomi/ekonomi_pajak.jpg',
+                      width: MediaQuery.of(context).size.width * 0.9)
                 ],
               ),
             ),
@@ -128,11 +129,14 @@ class EkonomiPhonePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    height: MediaQuery.of(context).size.height * .3,
+                    // height: MediaQuery.of(context).size.height * .3,
                     width: MediaQuery.of(context).size.width,
                     color: Color(0xFFFFF6DC),
                     padding: EdgeInsets.symmetric(
-                        horizontal: MediaQuery.of(context).size.width * 0.06),
+                        horizontal: MediaQuery.of(context).size.width * 0.06,
+                        vertical: MediaQuery.of(context).size.height * 0.005),
+                    margin: EdgeInsets.symmetric(
+                        vertical: MediaQuery.of(context).size.height * 0.1),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
