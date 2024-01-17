@@ -8,6 +8,8 @@ class EkonomiDesktopPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+
     return Scaffold(
       body: SingleChildScrollView(
           child: Column(children: [
@@ -92,8 +94,8 @@ class EkonomiDesktopPage extends StatelessWidget {
         ),
         Container(
           padding: EdgeInsets.symmetric(
-              horizontal: MediaQuery.of(context).size.width * 0.146),
-          height: MediaQuery.of(context).size.height * 0.40,
+              horizontal: MediaQuery.of(context).size.width * 0.146,
+              vertical: MediaQuery.of(context).size.height * 0.01),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -134,17 +136,21 @@ class EkonomiDesktopPage extends StatelessWidget {
               children: [
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       'PENDAPATAN PROVINSI SULAWESI SELATAN',
                       style: GoogleFonts.poppins(
                           fontWeight: FontWeight.w600, fontSize: 24),
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(
+                      height: 10,
+                    ),
                     Pendapatan()
                   ],
                 ),
-                Image.asset('lib/assets/image/ekonomi/ekonomi_pajak.jpg')
+                Image.asset('lib/assets/image/ekonomi/ekonomi_pajak.jpg',
+                    width: width * 0.42)
               ],
             )),
         Container(
@@ -165,8 +171,9 @@ class EkonomiDesktopPage extends StatelessWidget {
                 height: MediaQuery.of(context).size.height * .3,
                 width: MediaQuery.of(context).size.width * .6,
                 color: Color(0xFFFFF6DC),
-                padding: EdgeInsets.symmetric(
-                    horizontal: MediaQuery.of(context).size.width * 0.146),
+                padding: EdgeInsets.only(
+                    left: MediaQuery.of(context).size.width * 0.146,
+                    right: MediaQuery.of(context).size.width * 0.01),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -188,8 +195,7 @@ class EkonomiDesktopPage extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-              horizontal: MediaQuery.of(context).size.width * 0.146),
+          padding: EdgeInsets.symmetric(horizontal: width * 0.146),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -199,10 +205,13 @@ class EkonomiDesktopPage extends StatelessWidget {
                   Text('PENDAPATAN REGIONAL',
                       style: GoogleFonts.poppins(
                           fontWeight: FontWeight.w600, fontSize: 24)),
-                  Text(
-                    'Pendapatan regional Provinsi Sulawesi Selatan berasal dari tiga sumber utama: Pendapatan Asli Daerah (PAD),\nPendapatan Transfer, dan Pendapatan Lain-lain.',
-                    style: GoogleFonts.poppins(
-                        fontWeight: FontWeight.w500, fontSize: 13),
+                  Container(
+                    width: width * 0.35,
+                    child: Text(
+                      'Pendapatan regional Provinsi Sulawesi Selatan berasal dari tiga sumber utama: Pendapatan Asli Daerah (PAD),\nPendapatan Transfer, dan Pendapatan Lain-lain.',
+                      style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w500, fontSize: 13),
+                    ),
                   )
                 ],
               ),
